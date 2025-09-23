@@ -9,4 +9,3 @@
 3. João Pedro de Souza Fraga
 4. Vinícius Santos Leite
 5. Marcos Antônio da Silva Almeida
-6. Álvaro Lopes Rios
