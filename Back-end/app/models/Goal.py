@@ -1,0 +1,32 @@
+from sqlmodel import Field, SQLModel
+
+class Goal(SQLModel, table=True):
+    id_goal: int = Field(
+        default=None,
+        primary_key=True,
+        title="ID", 
+        description="Identificador único da meta.")
+    goal_description: str = Field(
+        default=None,
+        title="Descrição", 
+        description="Descrição da meta")
+    start_date: str = Field(
+        title="Data de início", 
+        description="Data em que a meta começou.")
+    end_date: str = Field(
+        title="Data de fim", 
+        description="Data em que a meta finaliza.")
+    goal_value: float = Field(
+        title="Valor meta", 
+        description="Valor que a meta deseja bater.")
+    atual_value: float = Field(
+        default=0.0,
+        title="Valor atual", 
+        description="Valor em que o usuário está.")
+    in_progress: bool = Field(
+        default=True,
+        title="Progresso", 
+        description="Determina se a tarefa está em progresso.")
+    priority: str = Field(
+        title="Prioridade", 
+        description="Prioridade da meta.")
