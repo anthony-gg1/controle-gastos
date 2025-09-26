@@ -1,4 +1,4 @@
-// Componente de Header
+// Componete custom-header
 class CustomHeader extends HTMLElement {
     constructor() {
         super();
@@ -41,5 +41,23 @@ class CustomHeader extends HTMLElement {
         `;
     }
 }
+// Fim do componente Header
 
-customElements.define('custom-header', CustomHeader)
+// Componete custom-footer
+class CustomFooter extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <footer class="bg-black text-start">
+                <div class="text-light my-2 text-center">
+                © 2025 Minha Empresa. Todos os direitos reservados.
+                </div>
+            </footer>
+        `
+    }
+}
+// Fim do componete custom-footer
+
+// Definição de componetes
+customElements.define('custom-header', CustomHeader);
+customElements.define('custom-footer', CustomFooter);
