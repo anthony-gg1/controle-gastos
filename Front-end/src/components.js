@@ -49,7 +49,7 @@ class CustomFooter extends HTMLElement {
         super();
         this.innerHTML = `
             <footer class="bg-black text-start">
-                <div class="text-light my-2 text-center">
+                <div class="text-light py-2 text-center">
                 © 2025 Minha Empresa. Todos os direitos reservados.
                 </div>
             </footer>
