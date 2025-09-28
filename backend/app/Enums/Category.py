@@ -3,7 +3,7 @@
 class CategoryExpense(Enum):
     OUTRO       = 0
     ALUGUEL     = auto()
-    ALIMENTAÇÃO = auto()
+    ALIMENTACAO = auto()
     TRANSPORTE  = auto()
     CONTAS      = auto()
 
