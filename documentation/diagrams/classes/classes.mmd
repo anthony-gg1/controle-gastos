@@ -1,0 +1,29 @@
+---
+config:
+  look: handDrawn
+  theme: redux-dark
+---
+classDiagram
+    class Transaction {
+        + id
+        + value
+        + description
+        + category
+        + date_registered
+    }
+    class User {
+        + id
+        + name
+        + email
+        + pix_key
+    }
+    class Goal {
+        + id
+        + description
+        + start_date
+        + end_date
+        + value
+        + actual_value
+        + in_progress
+        + priority
+    }
