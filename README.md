@@ -1,6 +1,6 @@
 # Controle de Gastos Pessoais
 
-## Bem vindo ao projeto de Controle de Gastos
+## Bem vindo ao Sistema de Controle de Gastos Inteligente - SCGI
 
 Este sistema foi desenvolvido para ajudar usuários a gerenciar suas finanças, acompanhar despesas, receitas e metas, promovendo maior controle e organização financeira.
 
