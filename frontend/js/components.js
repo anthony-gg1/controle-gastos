@@ -7,8 +7,8 @@ class CustomHeader extends HTMLElement {
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container-fluid">
                         <!-- Logotipo -->
-                        <a class="navbar-brand" href="index.html">
-                            <img src="../frontend/imgs/" alt="Logo da empresa" height="40" />
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="/imgs/" alt="Logo da empresa" height="40" />
                         </a>
                 
                         <!-- Botão Responsivo -->
@@ -23,15 +23,15 @@ class CustomHeader extends HTMLElement {
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item ms-3">
                                 <a class="btn btn-outline-warning border border-2 border-warning rounded px-4 py-2"
-                                    href="../frontend/pages/about_us.html">Sobre Nós</a>
+                                    href="/pages/about_us.html">Sobre Nós</a>
                                 </li>
                                 <li class="nav-item ms-3">
                                 <a class="btn btn-outline-warning border border-2 border-warning rounded px-4 py-2"
-                                    href="../frontend/pages/contact.html">Contato</a>
+                                    href="/pages/contact.html">Contato</a>
                                 </li>
                                 <li class="nav-item ms-3">
                                 <a class="btn btn-outline-warning border border-2 border-warning rounded px-4 py-2"
-                                    href="../frontend/pages/privacy_policy.html">Política de Privacidade</a>
+                                    href="/pages/privacy_policy.html">Política de Privacidade</a>
                                 </li>
                             </ul>
                         </div>
