@@ -1,12 +1,12 @@
 from sqlmodel import Field, SQLModel
 
 class Goal(SQLModel, table=True):
-    id_goal: int = Field(
+    id: int = Field(
         default=None,
         primary_key=True,
         title="ID", 
         description="Identificador único da meta.")
-    goal_description: str = Field(
+    description: str = Field(
         default=None,
         title="Descrição", 
         description="Descrição da meta")
@@ -16,10 +16,10 @@ class Goal(SQLModel, table=True):
     end_date: str = Field(
         title="Data de fim", 
         description="Data em que a meta finaliza.")
-    goal_value: float = Field(
+    value: float = Field(
         title="Valor meta", 
         description="Valor que a meta deseja bater.")
-    atual_value: float = Field(
+    actual_value: float = Field(
         default=0.0,
         title="Valor atual", 
         description="Valor em que o usuário está.")
