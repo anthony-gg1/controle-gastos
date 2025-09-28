@@ -4,31 +4,65 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-2" value="Estabelecer Meta" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="250" width="560" height="275" as="geometry" />
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-2" value="Registrar Transação" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="200" width="510" height="275" as="geometry" />
         </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-35" target="5wmZo-m2C_Y5KggY9xoz-37">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-35" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
-          <mxGeometry x="60" y="35" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-37" target="5wmZo-m2C_Y5KggY9xoz-40">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-37" value="1. Cliente acessa o aplicativo" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
-          <mxGeometry x="140" y="20" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" target="5wmZo-m2C_Y5KggY9xoz-43">
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-3">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="50" as="sourcePoint" />
+            <mxPoint x="214.0000000000001" y="45" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-40" value="2. Cliente abre a página de metas" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
-          <mxGeometry x="260" y="20" width="100" height="60" as="geometry" />
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-3" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="134" y="30" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5wmZo-m2C_Y5KggY9xoz-43" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
-          <mxGeometry x="400" y="20" width="100" height="60" as="geometry" />
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="294.0000000000001" y="45" as="sourcePoint" />
+            <mxPoint x="334.0000000000001" y="45" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-7" value="1. Cliente acessa o aplicativo" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="212" y="16" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-10" target="5wmZo-m2C_Y5KggY9xoz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-10" value="2. Cliente acessa a página de registrar transação" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="332" y="16" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-12" target="5wmZo-m2C_Y5KggY9xoz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-12" value="3. Cliente define o valor da transação" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="346.5" y="111" width="91" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-18" value="4. Cliente define receita ou despesa" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="223" y="111" width="91" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="138.0000000000001" y="174.9999999999999" as="sourcePoint" />
+            <mxPoint x="138.0000000000001" y="199.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-20" value="5. Cliente define a categoria da transação" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="84" y="111" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.988;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="191.68000000000006" y="140.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" target="5wmZo-m2C_Y5KggY9xoz-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180.5000000000001" y="229.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-22" value="6. Cliente confirma a transação" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="96.5" y="201" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-26" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="253.5" y="215" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
