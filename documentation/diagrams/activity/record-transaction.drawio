@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="9ZSFSqTpKgPwLhmnzNid">
+    <mxGraphModel dx="872" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-2" value="Estabelecer Meta" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="250" width="560" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-35" target="5wmZo-m2C_Y5KggY9xoz-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-35" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="60" y="35" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" source="5wmZo-m2C_Y5KggY9xoz-37" target="5wmZo-m2C_Y5KggY9xoz-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-37" value="1. Cliente acessa o aplicativo" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="140" y="20" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5wmZo-m2C_Y5KggY9xoz-2" target="5wmZo-m2C_Y5KggY9xoz-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="50" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-40" value="2. Cliente abre a página de metas" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="260" y="20" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wmZo-m2C_Y5KggY9xoz-43" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="5wmZo-m2C_Y5KggY9xoz-2">
+          <mxGeometry x="400" y="20" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
