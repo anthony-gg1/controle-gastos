@@ -1,0 +1,28 @@
+---
+config:
+  theme: redux-dark-color
+---
+erDiagram
+    Transaction {
+        id INT
+        value DECIMAL
+        description VARCHAR
+        category VARCHAR
+        date_registered DATE
+    }
+    User {
+        id INT
+        name VARCHAR
+        email VARCHAR
+        pix_key VARCHAR
+    }
+    Goal {
+        id INT
+        description VARCHAR
+        start_date DATE
+        end_date DATE
+        value DECIMAL
+        actual_value DECIMAL
+        in_progress BOOLEAN
+        priority VARCHAR
+    }
