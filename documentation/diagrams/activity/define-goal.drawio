@@ -1,1 +1,70 @@
-<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/></root></mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram id="T6i4_y3xrLPxwYvq7xZs" name="Página-1">
+    <mxGraphModel dx="727" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-1" value="Definir Meta" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="190" width="510" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1" source="HvWmr9zA-YDFwrBDBzwj-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="214.0000000000001" y="45" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-3" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="134" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="294.0000000000001" y="45" as="sourcePoint" />
+            <mxPoint x="334.0000000000001" y="45" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-5" value="1. Cliente acessa o aplicativo" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="212" y="16" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1" source="HvWmr9zA-YDFwrBDBzwj-7" target="HvWmr9zA-YDFwrBDBzwj-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-7" value="2. Cliente acessa a página de definir meta&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="332" y="16" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1" source="HvWmr9zA-YDFwrBDBzwj-9" target="HvWmr9zA-YDFwrBDBzwj-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-9" value="3. Cliente define o valor da meta" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="346.5" y="111" width="91" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-10" value="4. Cliente define o título da meta" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="223" y="111" width="91" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="138.0000000000001" y="174.9999999999999" as="sourcePoint" />
+            <mxPoint x="138.0000000000001" y="199.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-12" value="5. Cliente define descrição da meta" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="84" y="111" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.988;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1" source="HvWmr9zA-YDFwrBDBzwj-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="191.68000000000006" y="140.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="HvWmr9zA-YDFwrBDBzwj-1" target="HvWmr9zA-YDFwrBDBzwj-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180.5000000000001" y="229.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-15" value="6. Cliente escolhe a data limite" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="96.5" y="201" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HvWmr9zA-YDFwrBDBzwj-16" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="HvWmr9zA-YDFwrBDBzwj-1">
+          <mxGeometry x="253.5" y="215" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
