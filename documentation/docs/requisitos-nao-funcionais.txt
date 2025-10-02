@@ -1,0 +1,24 @@
+- Cadastrar Usuário
+- Listar Usuários
+- Consultar Dados de Usuário
+- Editar Dados de Usuário
+- Apagar Usuário
+- Autenticar de Usuário
+
+- Cadastrar Transação
+- Listar Transações
+- Consultar Dados de Transação
+- Editar Dados de Transação
+- Apagar Transação
+
+- Cadastrar Meta
+- Listar Metas
+- Consultar Dados da Meta
+- Editar Dados da Meta
+- Apagar Meta
+- Bater Meta
+
+- Emitir Relatórios em Formato CSV
+- Emitir Relatórios em Formato JSON
+- Emitir Relatórios em Formato XML
+- Gerar Relatórios com Base em Gráficos
