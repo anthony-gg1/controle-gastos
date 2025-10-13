@@ -80,7 +80,6 @@ O presente trabalho foi proposto pelo professor Álvaro Lopes Rios, com o objeti
 
 ### Ferramentas utilizadas
 
-- **ChatGPT:** Correção de bugs, planejamento de protótipos e definição dos modelos a serem aplicados.
 - **GitHub:** Compartilhamento de arquivos, colaboração e acompanhamento da produtividade do grupo.
 
 ---
