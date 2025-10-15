@@ -41,6 +41,16 @@ class CustomFooter extends HTMLElement {
 }
 // Fim do componete custom-footer
 
+// Componente Menu
+class CustomMenu extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = ``;
+    }
+}
+// Fim do componente Menu
+
 // Definição de componetes
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
+customElements.define('custom-menu', CustomMenu);
