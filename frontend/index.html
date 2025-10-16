@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/utils.css" />
 </head>
 
-<body class="min-vh-100 d-flex flex-column">
+<body class="min-vh-100 d-flex flex-column min-w-100">
 
     <!-- Header -->
     <custom-header></custom-header>
@@ -22,7 +22,7 @@
     <!-- Fim de Menu -->
 
     <!-- Main -->
-    <main class="bgc-secondary text-center py-5 px-3 flex-grow-1 d-flex justify-content-around">
+    <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
         <!-- Sessão: Dados Bancários -->
         <section class="d-flex flex-column justify-content-center m-3 gap-3">
             <div class="bgc-primary p-3 px-4 rounded">
@@ -60,7 +60,7 @@
         <!-- Sessão: Navegação e Relatório -->
         <section class="w-50 d-flex flex-column m-3 gap-3">
             <!-- Navegação -->
-            <div class="bgc-primary p-3 px-4 rounded d-flex justify-content-around">
+            <div class="bgc-primary p-3 px-4 rounded d-flex flex-wrap justify-content-around">
                 <a href="/pages/transaction.html" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-cash fs-1"></i> Transação</a>
                 <a href="/pages/goal.html" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-cash-stack fs-1"></i> Meta</a>
                 <a href="/pages/history.html" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-clock fs-1"></i> Histórico</a>

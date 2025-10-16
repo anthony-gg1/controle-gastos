@@ -34,7 +34,7 @@ class CustomFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="bgc-primary">
                 <!--SEÇÃO DE INFORMAÇÕES-->
-                <section class="container d-flex justify-content-between align-items-start">
+                <section class="container d-flex gap-3 flex-nowrap justify-content-between align-items-start">
                     <div class="py-2">
                         <h5 class="fcc-primary py-3">
                             Email
@@ -112,10 +112,12 @@ class CustomFooter extends HTMLElement {
                         </ul>
                     </div>
                 </section>
-                <h4 class="fcc-primary p-4 text-center">
-                    Mais informações em <a href="/pages/about_us.html" class="fcc-primary">About Us</a>
-                </h4>
-                <p class="text-center"><small class="fcc-secondary">2025 - Todos os direitos reservados</small></p>
+                <div class="">
+                    <h5 class="fcc-primary p-4 text-center">
+                        Mais informações em <a href="/pages/about_us.html" class="fcc-primary">About Us</a>
+                    </h6>
+                    <p class="text-center my-0"><small class="fcc-secondary"> © 2025 BDIPI®. Todos os direitos reservados.</small></p>
+                </div>
             </footer>
         `
     }
