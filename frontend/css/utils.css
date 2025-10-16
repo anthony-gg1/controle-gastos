@@ -1,3 +1,35 @@
 .width-card {
     width: 23rem;
 }
+
+/* LARGURA BASEADA EM CARACTERES */
+.w-ch-2 {
+    width: 2ch;
+}
+.w-ch-4 {
+    width: 4ch;
+}
+.w-ch-6 {
+    width: 6ch;
+}
+.w-ch-8 {
+    width: 8ch;
+}
+.w-ch-10 {
+    width: 10ch;
+}
+.w-ch-12 {
+    width: 12ch;
+}
+.w-ch-14 {
+    width: 14ch;
+}
+.w-ch-16 {
+    width: 16ch;
+}
+.w-ch-18 {
+    width: 18ch;
+}
+.w-ch-20 {
+    width: 20ch;
+}
