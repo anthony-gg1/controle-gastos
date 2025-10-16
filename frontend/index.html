@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
@@ -21,36 +22,36 @@
     <!-- Fim de Menu -->
 
     <!-- Main -->
-    <main class="bgc-secondary text-center py-5 px-3 flex-grow-1 d-flex flex-column">
+    <main class="bgc-secondary text-center py-5 px-3 flex-grow-1 d-flex">
         <!-- Sessão: Dados Bancários -->
-        <section>
-            <div>
-                <h2>Saldo</h2>
-                <div>55,00 R$</div>
-                <div>
-                    <div>
+        <section class="d-flex flex-column">
+            <div class="bgc-primary p-3 px-4 m-3 rounded">
+                <h2 class="fcc-primary text-start m-1 mx-2">Saldo</h2>
+                <div class=" display-2 fw-bold fcc-primary text-start w-ch-10 mx-4">R$ 640,00</div>
+                <div class="fcc-secondary text-start mx-4">
+                    <div class="fw-bold">
                         Estado: <span>Positivo</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Ultima receita: <span>10/10/2025</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Ultima despesa: <span>09/09/2025</span>
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>Meta</h2>
-                <div>90,00 R$</div>
-                <div>
-                    <div>
+            <div class="bgc-primary p-3 px-4 mx-3 rounded">
+                <h2 class="fcc-primary text-start m-1 mx-2">Meta</h2>
+                <div class=" display-2 fw-bold fcc-primary text-start w-ch-10 mx-4">R$ 1500,00</div>
+                <div class="fcc-secondary text-start mx-4">
+                    <div class="fw-bold">
                         Estado: <span>Em progresso</span>
                     </div>
-                    <div>
-                        Diferença: <span>10/10/2025</span>
+                    <div class="fw-bold">
+                        Diferença: <span>R$ 860,00</span>
                     </div>
-                    <div>
-                        Data limite: <span>09/09/2025</span>
+                    <div class="fw-bold">
+                        Ultima despesa: <span>09/09/2025</span>
                     </div>
                 </div>
             </div>
