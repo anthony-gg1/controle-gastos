@@ -1,0 +1,17 @@
+﻿.custom-table {
+    border-radius: 5px;
+    color: #fff;
+}
+.custom-table thead {
+    text-align: center;
+    background-color: #343a40;
+}
+.custom-table tbody tr td {
+    padding-inline: 14px;
+}
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #6C757D;
+}
+.custom-table tbody tr:nth-child(even) {
+    background-color: #495057;
+}
