@@ -114,7 +114,7 @@ class CustomFooter extends HTMLElement {
                 </section>
                 <div class="">
                     <h5 class="fcc-primary p-4 text-center">
-                        Mais informações em <a href="/pages/about_us.html" class="fcc-primary">About Us</a>
+                        Mais informações em <a href="/pages/about-us.html" class="fcc-primary">About Us</a>
                     </h6>
                     <p class="text-center my-0"><small class="fcc-secondary"> © 2025 BDIPI®. Todos os direitos reservados.</small></p>
                 </div>
