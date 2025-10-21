@@ -165,23 +165,18 @@ class CustomMenu extends HTMLElement {
                                 Página Inicial</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="/pages/about-project.html" class="text-decoration-none">
+                            <a href="/pages/about-project" class="text-decoration-none">
                                 <i class="bi bi-file-code-fill"></i>
                                 Sobre o Projeto</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="/pages/about-us.html" class="text-decoration-none">
+                            <a href="/pages/about-us" class="text-decoration-none">
                                 <i class="bi bi-people-fill"></i>
                                 Sobre Nós</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="/pages/faq.html" class="text-decoration-none">
+                            <a href="/pages/help" class="text-decoration-none">
                                 <i class="bi bi-question-square-fill"></i>
-                                FAQs</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="/pages/help.html" class="text-decoration-none">
-                                <i class="bi bi-info-circle-fill"></i>
                                 Ajuda</a>
                         </li>
                     </ul>
