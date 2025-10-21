@@ -43,72 +43,94 @@ class CustomFooter extends HTMLElement {
         this.innerHTML = `
             <!-- COLUNAS -->
             <div class="d-flex justify-content-around flex-wrap">
-                <!-- EMAIL -->
-                <div class="my-3">
+                <!-- EMPRESA -->
+                <div class="my-3 gap-3 w-25 px-3">
+                    <div class="text-center">
+                        <img src="/imgs/logo.png" alt="Logo do projeto">
+                    </div>
+                    <div class="text-center">
+                        <h5 class="fcc-primary">BDIPI®</h5>
+                    </div>
+                    <div class="text-center fcc-primary px-5">
+                        Um simples pequeno de futuros desenvolvedores construindo um simples projeto.
+                    </div>
+                </div>
+
+                <!-- TECNOLOGIAS -->
+                <div class="my-3 w-25 px-3">
                     <h5 class="fcc-primary">
-                        Email
+                        Tecnologias
                     </h5>
                     <ul class="list-group list-group-flush bgc-primary">
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            anthonyguilhermevieiramoraes@gmail.com
+                            UX/UI Design e Prototipagem (Figma)
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            paulosocratesdesouza@gmail.com
+                            Diagramação (Draw.io, brModelo, Mermaid)
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            marcosantoniodasilvaalmeidas@gmail.com
+                            Desenvolvimento Back-end (Python, FastAPI, SQLModel, SQLite)
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Vsantosleite25@gmail.com
-                        </li>
-                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            fragapereira53@gmail.com
+                            Desenvolvimento Front-end (HTML, CSS, Botstrap, JavaScript)
                         </li>
                     </ul>
                 </div>
-                <!-- GITHUB -->
-                <div class="my-3">
+
+                <!-- DESENVOLVEDORES -->
+                <div class="my-3 w-25 px-3">
                     <h5 class="fcc-primary">
-                        Github
+                        Desenvolvedores
                     </h5>
                     <ul class="list-group list-group-flush bgc-primary">
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            anthony-gg1
+                            <a href="https://github.com/anthony-gg1" target="_blank" class="text-decoration-none fcc-secondary">
+                                Anthony Guilherme
+                            </a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            PauloS5
+                            <a href="https://github.com/paulos5" target="_blank" class="text-decoration-none fcc-secondary">
+                                Paulo Sócrates
+                            </a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            marcosantoniodasilvaalmeidas-arc
+                            <a href="https://github.com/marcosantoniodasilvaalmeidas-arc" target="_blank" class="text-decoration-none fcc-secondary">
+                                Marcos Antônio
+                            </a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Falkc2
+                            <a href="https://github.com/falkc2" target="_blank" class="text-decoration-none fcc-secondary">
+                                Vinicíus Santos
+                            </a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            joaopedro192009
+                            <a href="https://github.com/joaopedro261009" target="_blank" class="text-decoration-none fcc-secondary">
+                                João Pedro  
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- TELEFONE -->
-                <div class="my-3">
+
+                <!-- CERTIFICAÇÕES -->
+                <div class="my-3 w-25 px-3">
                     <h5 class="fcc-primary">
-                        Telefone
+                        Certificações
                     </h5>
                     <ul class="list-group list-group-flush bgc-primary">
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            (68) 99978-1355
+                            AWS Certified Cloud Practitioner
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            (68) 98124-0703
+                            Laravel Certified Developer
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            (68) 99212-9795
+                            Google UX Design Professional
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            (68) 99614-2878
+                            Microsoft Azure Fundamentals (AZ-900)
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            (68) 99233-1471
+                            Python for Data Science (IBM)
                         </li>
                     </ul>
                 </div>
