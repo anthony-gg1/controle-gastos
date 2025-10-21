@@ -2,32 +2,33 @@
 class CustomHeader extends HTMLElement {
     constructor() {
         super();
+
+        this.classList.add("bgc-primary", "sticky-top", "w-100", "container-fluid");
+        this.classList.add("d-flex", "justify-content-between", "align-items-center");
+        this.classList.add("border-bottom", "borderc-primary", "border-3");
+
         this.innerHTML = `
-            <!-- CABEÇALHO -->
-            <header class="bgc-primary d-flex justify justify-content-between align-items-center">
+            <!-- BOTÃO -->
             <div>
-                <button class="btn fcc-primary fs-1 p-0 mx-3"
-                 data-bs-toggle="offcanvas" data-bs-target="#side-menu" aria-controls="side-menu">
-                  <i class="bi bi-list p-0"></i>
+                <button class="btn fcc-primary fs-1 p-0 mx-3" data-bs-toggle="offcanvas" data-bs-target="#side-menu" aria-controls="side-menu">
+                    <i class="bi bi-list p-0"></i>
                 </button>
             </div>
+            
+            <!-- LOGO -->
             <div class="my-2">
                 <a href="/">
-                  <img src="/imgs/logo.png" alt="Logo do projeto">
+                    <img src="/imgs/logo.png" alt="Logo do projeto">
                 </a>
             </div>
+
+            <!-- PERFIL -->
             <div>
                 <a href="/pages/profile" class="btn fcc-primary fs-1 p-0 mx-3">
-                  <i class="bi bi-person-circle p-0"></i>
+                    <i class="bi bi-person-circle p-0"></i>
                 </a>
             </div>
-            </header>
         `;
-        this.classList.add("sticky-top");
-        this.classList.add("border-bottom");
-        this.classList.add("borderc-primary");
-        this.classList.add("border-2");
-
     }
 }
 // Fim do componente Header
@@ -36,94 +37,90 @@ class CustomHeader extends HTMLElement {
 class CustomFooter extends HTMLElement {
     constructor() {
         super();
+
+        this.classList.add("bgc-primary", "d-flex", "flex-column", "gap-3", "py-2", "container-fluid");
+
         this.innerHTML = `
-            <footer class="bgc-primary">
-                <!--SEÇÃO DE INFORMAÇÕES-->
-                <section class="container d-flex gap-3 flex-nowrap justify-content-between align-items-start">
-                    <div class="py-2">
-                        <h5 class="fcc-primary py-3">
-                            Email
-                        </h5>
-                        <ul class="list-group list-group-flush bgc-primary">
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                anthonyguilhermevieiramoraes@gmail.com
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                paulosocratesdesouza@gmail.com
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                marcosantoniodasilvaalmeidas@gmail.com
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                Vsantosleite25@gmail.com
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                fragapereira53@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="py-2">
-                        <h5 class="fcc-primary py-3">
-                            Github
-                        </h5>
-                        <ul class="list-group list-group-flush bgc-primary">
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                anthony-gg1
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                PauloS5
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                marcosantoniodasilvaalmeidas-arc
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                Falkc2
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                joaopedro192009
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="py-2">
-                        <h5 class="fcc-primary py-3">
-                            Telefone
-                        </h5>
-                        <ul class="list-group list-group-flush bgc-primary">
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                (68) 99978-1355
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                (68) 98124-0703
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                (68) 99212-9795
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                (68) 99614-2878
-                            </li>
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                (68) 99233-1471
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="py-2">
-                        <h5 class="fcc-primary py-3">
-                            Professor
-                        </h5>
-                        <ul class="list-group list-group-flush bgc-primary">
-                            <li class="list-group-item bgc-primary text-white fs-6">
-                                Álvaro Lopes Rios
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="">
-                    <h5 class="fcc-primary p-4 text-center">
-                        Mais informações em <a href="/pages/about-us" class="fcc-primary">About Us</a>
-                    </h6>
-                    <p class="text-center my-0"><small class="fcc-secondary"> © 2025 BDIPI®. Todos os direitos reservados.</small></p>
+            <!-- COLUNAS -->
+            <div class="d-flex justify-content-around flex-wrap">
+                <!-- EMAIL -->
+                <div class="my-3">
+                    <h5 class="fcc-primary">
+                        Email
+                    </h5>
+                    <ul class="list-group list-group-flush bgc-primary">
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            anthonyguilhermevieiramoraes@gmail.com
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            paulosocratesdesouza@gmail.com
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            marcosantoniodasilvaalmeidas@gmail.com
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            Vsantosleite25@gmail.com
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            fragapereira53@gmail.com
+                        </li>
+                    </ul>
                 </div>
-            </footer>
+                <!-- GITHUB -->
+                <div class="my-3">
+                    <h5 class="fcc-primary">
+                        Github
+                    </h5>
+                    <ul class="list-group list-group-flush bgc-primary">
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            anthony-gg1
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            PauloS5
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            marcosantoniodasilvaalmeidas-arc
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            Falkc2
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            joaopedro192009
+                        </li>
+                    </ul>
+                </div>
+                <!-- TELEFONE -->
+                <div class="my-3">
+                    <h5 class="fcc-primary">
+                        Telefone
+                    </h5>
+                    <ul class="list-group list-group-flush bgc-primary">
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            (68) 99978-1355
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            (68) 98124-0703
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            (68) 99212-9795
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            (68) 99614-2878
+                        </li>
+                        <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
+                            (68) 99233-1471
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="m-0 mx-3 fcc-primary">
+
+            <!-- MINI RODAPÉ -->
+            <div>
+                <p class="text-center m-0">
+                    <small class="fcc-primary"> © 2025 BDIPI®. Todos os direitos reservados.</small>
+                </p>
+            </div>
         `
     }
 }
