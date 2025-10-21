@@ -4,7 +4,7 @@ class CustomHeader extends HTMLElement {
         super();
         this.innerHTML = `
             <!-- CABEÇALHO -->
-            <header class="bgc-primary stick sticky-top d-flex justify justify-content-between align-items-center">
+            <header class="bgc-primary d-flex justify justify-content-between align-items-center">
             <div>
                 <button class="btn fcc-primary fs-1 p-0 mx-3"
                  data-bs-toggle="offcanvas" data-bs-target="#side-menu" aria-controls="side-menu">
@@ -17,12 +17,17 @@ class CustomHeader extends HTMLElement {
                 </a>
             </div>
             <div>
-                <button class="btn fcc-primary fs-1 p-0 mx-3">
+                <a href="/pages/profile" class="btn fcc-primary fs-1 p-0 mx-3">
                   <i class="bi bi-person-circle p-0"></i>
-                </button>
+                </a>
             </div>
             </header>
         `;
+        this.classList.add("sticky-top");
+        this.classList.add("border-bottom");
+        this.classList.add("borderc-primary");
+        this.classList.add("border-2");
+
     }
 }
 // Fim do componente Header
@@ -114,7 +119,7 @@ class CustomFooter extends HTMLElement {
                 </section>
                 <div class="">
                     <h5 class="fcc-primary p-4 text-center">
-                        Mais informações em <a href="/pages/about-us.html" class="fcc-primary">About Us</a>
+                        Mais informações em <a href="/pages/about-us" class="fcc-primary">About Us</a>
                     </h6>
                     <p class="text-center my-0"><small class="fcc-secondary"> © 2025 BDIPI®. Todos os direitos reservados.</small></p>
                 </div>

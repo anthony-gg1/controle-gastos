@@ -10,7 +10,7 @@
 .fcc-primary {
     color: #9ec5fe;
 }
-.fcc-secondary {
+.fcc-secondary {    
     color: #fff;
 }
 .fcc-positive {
@@ -18,4 +18,12 @@
 }
 .fcc-negative {
     color: #FF5F61;
+}
+
+/* BORDAS */
+.borderc-primary {
+    border-color: #9ec5fe !important;
+}
+.borderc-secondary {
+    color: #fff !important;
 }
