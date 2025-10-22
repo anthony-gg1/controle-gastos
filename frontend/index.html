@@ -55,23 +55,25 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
 
         <!-- Sessão: Navegação e Relatório -->
         <section class="w-50 d-flex flex-column justify-content-between m-3 gap-3">
             <!-- Navegação -->
             <div class="bgc-primary p-3 rounded d-flex flex-wrap justify-content-around">
-                <a href="#new-transaction" class="d-flex flex-column fcc-primary fs-4 mx-2" data-bs-toggle="modal" data-bs-target="#modalTransaction">
+                <a href="#new-transaction" class="d-flex flex-column fcc-primary fs-4 mx-2" data-bs-toggle="modal"
+                    data-bs-target="#modalTransaction">
                     <i class="bi bi-cash fs-1"></i> Transação
                 </a>
-                
-                <!--MODAL NOVA TRANSAÇÃO-->
-                <custom-modal-transaction></custom-modal-transaction>
-                <!--FIM MODAL NOVA TRANSAÇÃO-->
 
-                <a href="/pages/goal" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-cash-stack fs-1"></i> Meta</a>
-                <a href="/pages/history" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-clock fs-1"></i> Histórico</a>
-                <a href="/pages/issue-reports" class="d-flex flex-column fcc-primary fs-4 mx-2"><i class="bi bi-bar-chart fs-1"></i> Relatórios</a>
+
+
+                <a href="/pages/goal" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-cash-stack fs-1"></i> Meta</a>
+                <a href="/pages/history" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-clock fs-1"></i> Histórico</a>
+                <a href="/pages/issue-reports" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-bar-chart fs-1"></i> Relatórios</a>
             </div>
 
             <!-- Relatório -->
@@ -89,6 +91,10 @@
     <!-- Rodapé -->
     <custom-footer></custom-footer>
     <!-- Fim de rodapé -->
+     
+    <!--MODAL NOVA TRANSAÇÃO-->
+    <custom-modal-transaction></custom-modal-transaction>
+    <!--FIM MODAL NOVA TRANSAÇÃO-->
 
     <script src="/js/components.js"></script>
     <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
