@@ -191,7 +191,67 @@ class CustomMenu extends HTMLElement {
 }
 // Fim do componente Menu
 
+// Componente Modal de Transações
+class CustomModalTransaction extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalTransaction" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalTransactionLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalTransactionLabel">Nova Transação</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="transactionType" class="form-label text-dark">
+                                        Tipo de Transação
+                                    </label>
+                                    <select class="form-select bgc-secondary text-dark" id="transactionType" required>
+                                        <option value="income">Receita</option>
+                                        <option value="expense">Despesa</option>
+                                    </select>
+                                    <label for="amount" class="form-label mt-3 text-dark">
+                                        Valor (R$)
+                                    </label>
+                                    <input type="number" class="form-control bgc-secondary text-dark" id="amount" required />
+                                    <label for="date" class="form-label mt-3 text-dark">
+                                        Data
+                                    </label>
+                                    <input type="date" class="form-control bgc-secondary text-dark" id="date" required />
+                                    <label for="description" class="form-label mt-3 text-dark">
+                                        Descrição
+                                    </label>
+                                    <textarea class="form-control bgc-secondary text-dark" id="description" rows="3" required></textarea>
+                                    <label for="category" class="form-label mt-3 text-dark">
+                                        Categoria
+                                    </label>
+                                    <select class="form-select bgc-secondary text-dark" id="category" required>
+                                        <option value="food">Alimentação</option>
+                                        <option value="transportation">Transporte</option>
+                                        <option value="entertainment">Entretenimento</option>
+                                        <option value="utilities">Contas</option>
+                                        <option value="others">Outros</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Transação Salva')">Salvar Transação</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Transações
+
 // Definição de componetes
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
 customElements.define('custom-menu', CustomMenu);
+customElements.define('custom-modal-transaction', CustomModalTransaction);
