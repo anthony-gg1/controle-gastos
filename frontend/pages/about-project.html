@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+</head>
+
+<body class="min-vh-100 d-flex flex-column min-w-100">
+
+    <!-- Header -->
+    <custom-header></custom-header>
+    <!-- Fim de Header -->
+
+    <!-- Menu -->
+    <custom-menu></custom-menu>
+    <!-- Fim de Menu -->
+
+    <!-- Main -->
+    <main>
+        <!-- Seção: Sobre o Projeto -->
+        <section>
+            <div>
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    O Sistema de Controle de Gastos Inteligente (SGCI) consiste em uma aplicação simples para gerenciar
+                    despesas e receitas do usuário, registrando-as no sistema. O software também permite estabelecer
+                    metas a serem cumpridas em um determinado período de tempo. Além disso, há a possibilidade de emitir
+                    relatórios com base em gráficos. <br>
+                    O projeto tem como foco a prática de técnicas de desenvolvimento Full Stack e metodologias ágeis.
+                    Vale ressaltar que o projeto não se propõe a ser algo inovador, genial ou visualmente sofisticado,
+                    mas sim um microprojeto desenvolvido ao longo de um bimestre.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção: Tecnologias -->
+        <section>
+            <h2>Tecnologias e Ferramentas</h2>
+            <div>
+                <h3>Metodologia</h3>
+                <p>
+                    No projeto, optou-se por utilizar o <span>Scrum</span>, metodologia que tem como foco o
+                    desenvolvimento ágil e a integração contínua, apresentando as seguintes características:
+                </p>
+                <ul>
+                    <li><span>Scrum Master:</span> Líder do grupo responsável por coordenar a equipe de desenvolvimento
+                        e auxiliar os demais membros.</li>
+                    <li><span>Product Owner:</span> Responsável por representar a ponte entre a equipe de
+                        desenvolvimento e o cliente.</li>
+                    <li><span>Sprint:</span> Ciclo de desenvolvimento que geralmente dura duas semanas.</li>
+                    <li><span>Daily:</span> Reunião diária para tratar das ações realizadas no projeto.</li>
+                    <li><span>Sprint Review:</span> Reunião ao final da sprint para debater o que foi feito.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Front-end</h3>
+                <p>
+                    O front-end é a parte do site responsável por ser executada do lado do cliente, ou seja, a parte
+                    exibida no navegador com a qual o usuário interage. Dentre as tecnologias utilizadas estão:
+                </p>
+                <ul>
+                    <li><span>HTML:</span> HyperText Markup Language (Linguagem de Marcação de Hipertexto), tecnologia
+                        responsável por estruturar o conteúdo de uma página web.</li>
+                    <li><span>CSS:</span> Cascading Style Sheets (Folhas de Estilo em Cascata), linguagem que atribui
+                        estilo ao HTML, definindo regras de cor, alinhamento, espaçamento, tamanho, entre outros.</li>
+                    <li><span>JavaScript:</span> Linguagem de programação usada para adicionar interatividade ao site,
+                        com base em princípios de lógica de programação e manipulação do DOM (Document Object Model).
+                    </li>
+                    <li><span>Bootstrap:</span> Framework CSS comumente usado para auxiliar na estilização da aplicação,
+                        facilitando a criação de animações e padronizando características entre os componentes.</li>
+                    <li><span>Chart.js:</span> Biblioteca JavaScript desenvolvida para a criação de gráficos de forma
+                        simples e intuitiva.</li>
+                    <li><span>Http-server:</span> Pequena ferramenta de linha de comando usada para executar a aplicação
+                        por meio de um servidor local simples.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Back-end</h3>
+                <p>
+                    O back-end é a parte que trabalha do lado do servidor, manipulando o banco de dados por meio de
+                    consultas e servindo dados ao front-end para que o usuário possa interagir. Para desenvolvê-lo,
+                    foram utilizadas as seguintes tecnologias:
+                </p>
+                <ul>
+                    <li><span>Python:</span> Linguagem de programação criada para ser simples e legível, utilizada no
+                        desenvolvimento da aplicação e das regras de negócio.</li>
+                    <li><span>FastAPI:</span> Framework Python criado para facilitar a criação de APIs. Seu ponto forte
+                        é o suporte a requisições assíncronas, o que melhora a performance da aplicação.</li>
+                    <li><span>SQLModel:</span> Framework que trabalha em conjunto com o FastAPI. É baseado em duas
+                        bibliotecas Python: SQLAlchemy e Pydantic.</li>
+                    <li><span>SQLite:</span> Banco de dados leve usado para persistir dados localmente. É conhecido por
+                        sua simplicidade, já que não depende de servidores — o banco é apenas um arquivo.</li>
+                    <li><span>Uvicorn:</span> Servidor ASGI utilizado pelo FastAPI para executar a aplicação.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção: Professor -->
+        <section>
+            <h2>Professor</h2>
+            <p>
+                O projeto tem como orientador o professor Álvaro Lopes Rios.
+            </p>
+        </section>
+    </main>
+    <!-- Fim do Main -->
+
+
+    <!-- Rodapé -->
+    <custom-footer></custom-footer>
+    <!-- Fim de rodapé -->
+
+    <script src="/js/components.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
