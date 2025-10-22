@@ -2,48 +2,68 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Controle de Gastos</title>
-    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/css/colors.css" />
-    <link rel="stylesheet" href="/css/utils.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Controle de Gastos</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/colors.css" />
+  <link rel="stylesheet" href="/css/utils.css" />
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
 
-    <!-- Header -->
-    <custom-header></custom-header>
-    <!-- Fim do Header -->
+  <!-- Header -->
+  <custom-header></custom-header>
+  <!-- Fim do Header -->
 
-    <!-- Main -->
-    <main>
-      
-    <section>
-      <h2>Gráfico de Pizza</h2>
-      <p>Representa a proporção entre ganhos e gastos.</p>
+  <!-- Main -->
+  <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around flex-column">
+    <div class="d-flex justify-content-around mb-3">
+      <!-- Grafico de pizza -->
+      <section
+        class="bgc-primary text-light d-flex flex-column justify-content-center align-items-center gap-5 p-3 rounded">
+        <div class="d-flex align-items-center gap-4">
+          <div class="d-flex align-items-center gap-2">
+            <div class="bg-success p-3 rounded-1"></div>
+            <span class="fs-5 fcc-primary">Ganhos</span>
+          </div>
+
+          <div class="d-flex align-items-center gap-2">
+            <div class="bg-danger p-3 rounded-1"></div>
+            <span class="fs-5 fcc-primary">Gastos</span>
+          </div>
+        </div>
+
+        <div>Gráfico de pizza</div>
+      </section>
+
+      <!-- Ganhos e perdas -->
+      <div class="bgc-primary p-3 rounded d-flex flex-wrap justify-content-around align-items-center ">
+        <section>
+          <div class="class=d-flex  flex-column fcc-primary fs-4 mx-2 gap-2">
+           <h2 class="display-5 fw-bold"> Gasto Total: R$ 450,00</h2> 
+            <h2 class="display-5 fw-bold">Ganho Total: R$ 450,00</h2>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Grafico de barras -->
+    <section
+      class="bgc-primary text-light d-flex flex-column justify-content-center align-items-center gap-5 p-3 rounded">
+      <h2>Gráfico de Barras </h2>
     </section>
 
-    <section>
-      <h2>Relatório Básico</h2>
-      <p>Relatório básico explicando os gastos.</p>
-    </section>
+  </main>
+  <!-- Fim do Main -->
 
-    <section>
-      <h2>Gráfico de Barras Verticais</h2>
-      <p>Mostra a variação dos gastos e ganhos ao longo do tempo.</p>
-    </section>
+  <!-- Rodapé -->
+  <custom-footer></custom-footer>
+  <!-- Fim de rodapé -->
 
-    </main>
-    <!-- Fim do Main -->
-
-    <!-- Rodapé -->
-    <custom-footer></custom-footer>
-    <!-- Fim do rodapé -->
-
-    <script src="/js/components.js"></script>
-    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
