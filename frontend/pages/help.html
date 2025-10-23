@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+</head>
+
+<body class="min-vh-100 d-flex flex-column min-w-100">
+
+    <!-- Header -->
+    <custom-header></custom-header>
+    <!-- Fim de Header -->
+
+    <!-- Menu -->
+    <custom-menu></custom-menu>
+    <!-- Fim de Menu -->
+
+    <!-- Main -->
+    <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
+        <!-- Sessão: Criação de Transações -->
+        <section class="container bgc-primary text-start p-4 rounded-3">
+            <h2 class="mb-4 fcc-primary">Ajuda</h2>
+            <div class="accordion accordion-flush" id="accordionHelp">
+                <div class="accordion-item bgc-primary">
+                    <h2 class="accordion-header"> 
+                        <button class="accordion-button collapsed bgc-primary border border-light" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+                            <p class="fcc-secondary">
+                                Como criar uma transação?
+                            </p>
+                        </button>
+                    </h2>
+                
+                    <div id="item1" class="accordion-collapse collapse" data-bs-parent="#accordionHelp">
+                        <div class="accordion-body border border-light">
+                            <p class="fcc-secondary">
+                                Primeiramente, Você deve acessar o link "Transação", na página inicial do sistema. Depois, colocar as informações solicitadas, <br>
+                                como: Tipo de transação (receita ou despesa), valor (em reais), data da transação, descrição da transação e categoria da transação. <br>
+                                Após preencher todos os campos, basta apertar o botão logo abaixo chamado "Salvar Transação". <br>
+                                Obs.: Todos os campos são obrigatórios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fim de Main -->
+
+    <!-- Rodapé -->
+    <custom-footer></custom-footer>
+    <!-- Fim de rodapé -->
+
+    <script src="/js/components.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
