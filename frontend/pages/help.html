@@ -24,31 +24,91 @@
 
     <!-- Main -->
     <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
-        <!-- Sessão: Criação de Transações -->
-        <section class="container bgc-primary text-start p-4 rounded-3">
-            <h2 class="mb-4 fcc-primary">Ajuda</h2>
-            <div class="accordion accordion-flush" id="accordionHelp">
-                <div class="accordion-item bgc-primary">
-                    <h2 class="accordion-header"> 
-                        <button class="accordion-button collapsed bgc-primary border border-light" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
-                            <p class="fcc-secondary">
-                                Como criar uma transação?
-                            </p>
-                        </button>
-                    </h2>
-                
-                    <div id="item1" class="accordion-collapse collapse" data-bs-parent="#accordionHelp">
-                        <div class="accordion-body border border-light">
-                            <p class="fcc-secondary">
-                                Primeiramente, Você deve acessar o link "Transação", na página inicial do sistema. Depois, colocar as informações solicitadas, <br>
-                                como: Tipo de transação (receita ou despesa), valor (em reais), data da transação, descrição da transação e categoria da transação. <br>
-                                Após preencher todos os campos, basta apertar o botão logo abaixo chamado "Salvar Transação". <br>
-                                Obs.: Todos os campos são obrigatórios.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Sessão: Relatórios  -->
+        <section class="container bgc-primary text-start p-4 rounded-3 mb-4">
+            <h2 class="mb-4 fcc-primary">Relatórios</h2>
+            <h3 class="mb-3 fcc-primary">O que é o saldo?</h3>
+            <p class="fcc-secondary">
+                O saldo, visualizado na página inicial, apresenta a soma de todas as transações cadastradas, sejam elas receitas ou despesas. <br>
+                Logo abaixo, aparece o estado do saldo, sendo ele positivo ou negativo, a última receita cadastrada e a última despesa cadastrada.
+            </p>
+            <h3 class="mb-3 fcc-primary">O que é a meta?</h3>
+            <p class="fcc-secondary">
+                A meta, visualizado na página inicial, apresenta a meta com o maior valor entre todas as metas cadastradas. <br>
+                Logo abaixo, aparece o estado da meta, sendo ela concluída ou em progresso, a diferença entre a meta e o saldo atual
+                e a última despesa cadastrada.
+            </p>
+            <h3 class="mb-3 fcc-primary">Como acessar o histórico de transações?</h3>
+            <p class="fcc-secondary">
+                Para acessar o histórico de transações, basta estar na página inicial e clicar no link chamado "Histórico" 
+                ao lado de metas e relatórios. <br> 
+                Serão mostrados as últimas transações cadastradas, a cor verde apresenta um ganho, logo, uma receita e a cor vermelha,
+                uma perca, <br>
+                ou seja, uma despesa.
+            </p>
+            <h3 class="mb-3 fcc-primary">Como acessar as metas?</h3>
+            <p class="fcc-secondary">
+                Para acessar as metas, basta estar na página inicial e clicar no link chamado "Meta" ao lado de transações. <br>
+                Serão mostradas todas as metas cadastradas, as informações apresentadas são o título da meta, a data limite e a descrição da meta. <br>
+                para acessar informações mais detalhadas sobre a meta, basta clicar no ícone de informação ao lado direito da meta.
+            </p>
+            <h3 class="mb-3 fcc-primary">Como gerar relatórios?</h3>
+            <p class="fcc-secondary">
+                Para gerar relatórios, basta estar na página inicial e clicar no link chamado "Relatórios", ao lado de Histórico. <br>
+                Após isso, será mostrado um gráfico de pizza que representa a porcentagem de ganhos e gastos com base nas transações cadastradas. <br>
+                Ao lado é mostrado o maior ganho de todas as receitas e o maior gasto de todas as despesas. <br>
+                Logo abaixo, será gerado um gráfico de barras que representa todos os ganhos e gastos em ordem de data das transações.
+            </p>
+        </section>
+
+        <!-- Sessão: Cadastrar  -->
+        <section class="container bgc-primary text-start p-4 rounded-3 mb-4">
+            <h2 class="mb-4 fcc-primary">Cadastrar</h2>
+            <h3 class="mb-3 fcc-primary">Como cadastrar uma nova transação?</h3>
+            <p class="fcc-secondary">
+                Para cadastrar uma nova transação, basta estar na página inicial, clicar no link chamado "Transação" ao lado de metas, <br>
+                após isso, preencha as informações, como: Tipo de transação (Receita ou despesa), valor, data, descrição opcional da transação, <br>
+                categoria da transação e por fim clique em "Salvar transação".
+            </p>
+            <h3 class="mb-3 fcc-primary">Como cadastrar uma nova meta?</h3>
+            <p class="fcc-secondary">
+                Para cadastrar uma nova meta, basta estar na página inicial, clicar no link chamado "Meta" ao lado de transações, <br>
+                após isso, preencha as informações, como: Título da meta, descrição, data de início, data de término da meta e status da meta, <br>
+                por fim, clique em "Salvar meta".
+            </p>
+        </section>
+
+        <!-- Sessão: Excluir  -->
+        <section class="container bgc-primary text-start p-4 rounded-3 mb-4">
+            <h2 class="mb-4 fcc-primary">Excluir</h2>
+            <h3 class="mb-3 fcc-primary">Como excluir uma transação?</h3>
+            <p class="fcc-secondary">
+                Para excluir uma transação, basta estar na página inicial, cliar no link chamado "Histórico" ao lado de metas e relatórios, <br>
+                após isso, localizar a transação que deseja excluir, clicar no ícone de lixeira ao lado direito da transação e confirmar a 
+                exclusão.
+            </p>
+            <h3 class="mb-3 fcc-primary">Como excluir uma meta?</h3>
+            <p class="fcc-secondary">
+                Para excluir uma meta, basta estar na página inicial, clicar no link chamado "Meta" ao lado de transações, <br>
+                após isso, localizar a meta que deseja excluir, clicar no ícone de lixeira ao lado direito da meta e confirmar a exclusão.
+            </p>
+        </section>
+
+        <!-- Sessão: Atualizar  -->
+        <section class="container bgc-primary text-start p-4 rounded-3 mb-4">
+            <h2 class="mb-4 fcc-primary">Atualizar</h2>
+            <h3 class="mb-3 fcc-primary">Como atualizar uma transação?</h3>
+            <p class="fcc-secondary">
+                Para atualizar uma transação, basta estar na página inicial, clicar no link chamado "Histórico" ao lado de metas e relatórios, <br>
+                após isso, localizar a transação que deseja atualizar, clicar no ícone de lápis ao lado direito da transação, <br>
+                atualizar as informações desejadas e por fim clicar em "Salvar alterações".
+            </p>
+            <h3 class="mb-3 fcc-primary">Como atualizar uma meta?</h3>
+            <p class="fcc-secondary">
+                Para atualizar uma meta, basta estar na página inicial, clicar no link chamado "Meta" ao lado de transações, <br>
+                após isso, localizar a meta que deseja atualizar, clicar no ícone de lápis ao lado direito da meta, <br>
+                atualizar as informações desejadas e por fim clicar em "Salvar alterações".
+            </p>
         </section>
     </main>
     <!-- Fim de Main -->
