@@ -1,0 +1,40 @@
+# CHANGELOG
+
+Todas as mudanças importantes neste projeto serão documentadas aqui.
+
+O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/)  
+Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
+
+---
+
+## [Unreleased]
+
+### Em Desenvolvimento
+- Criação de Receitas e Despesas
+- Categorização de Transações
+- Geração de Relatório em Gráficos
+- Atualizar e apagar transações
+- Atualizar e apagar metas
+- Mudar perfil de usuário
+- Cadastrar receitas e despesas
+- Mudanças Mínimas nas páginas `profile.html`, `goals.html` e `issue-reports.html`
+
+---
+
+## [0.1.0] - 2025-10-24
+
+### Adicionado
+- Todas as Páginas feitas
+- Página `help.html` criada
+- Criação de uma API falsa para testes
+- Integração de Bootstrap as Páginas
+- Criação de arquivos JavaScript
+- Arquivos `README.md`, `SECURITY.md`, `LICENSE.md` e `CHANGELOG.md` adicionados
+
+### Corrigido
+- Menu lateral na página `issue-reports`
+- `README.md` Atualizado
+- Mudança de cores em `about-us.html`
+
+
+
