@@ -1,8 +1,5 @@
 # Controle de Gastos Pessoais
 
-## Visão geral
-Sistema para gerenciar finanças pessoais: registrar receitas e despesas, acompanhar metas e visualizar relatórios. Desenvolvido como trabalho acadêmico para a disciplina de Banco de Dados (IFAC).
-
 ---
 
 ## Funcionalidades principais
@@ -11,7 +8,6 @@ Sistema para gerenciar finanças pessoais: registrar receitas e despesas, acompa
 - Categorização das transações
 - Definição e acompanhamento de metas financeiras
 - Dashboard com gráficos interativos
-- Exportação de dados em CSV
 - Filtros por período, categoria e valor
 - Interface web responsiva
 
@@ -27,10 +23,9 @@ controle-gastos/
 ├── frontend/                # HTML, CSS, JS, vendor (Bootstrap, etc.)
 │   ├── index.html
 │   └── pages/
-│       └── help.html
-├── .github/                 # (opcional) workflows, templates
-├── CHANGELOG.md             # histórico de mudanças (recomenda criar)
+├── CHANGELOG.md             # histórico de mudanças (criado)
 ├── SECURITY.md              # política de segurança (criada)
+├── LICENSE.md               # licença e políticas de uso (criado)
 └── README.md
 ```
 
@@ -116,7 +111,7 @@ Você pode usar, copiar, modificar e distribuir este software livremente, inclus
 - Reportes de bugs / dúvidas: abra uma issue no GitHub
 - Vulnerabilidades: emailinstitucional20@gmail.com (veja SECURITY.md)
 
-## Integrantes
+## Integrantes do Projeto
 1. Anthony Guilherme Vieira Moraes  
 2. Paulo Sócrates de Souza Pinheiro  
 3. João Pedro de Souza Fraga  
@@ -125,4 +120,3 @@ Você pode usar, copiar, modificar e distribuir este software livremente, inclus
 
 ## Professor orientador
 Álvaro Lopes Rios
-
