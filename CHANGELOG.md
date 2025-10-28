@@ -42,4 +42,13 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 
 ### Correções
 - Página `about-project.html` modificada para o padrão das outras páginas
-- Rodapé modificado 
+- Rodapé modificado
+- Criação de modais para manipular as metas
+- Página `history.html` modificada para o padrão de outras tabelas
+- Logo do projeto refatorada
+
+### Em desenvolvimento
+- Modal para emissão de relatórios
+- Modal para editar transação
+- Modal para excluir transação
+- Modal para editar dados do perfil do usuário
