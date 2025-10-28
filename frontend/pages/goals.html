@@ -25,18 +25,18 @@
     <!-- Main -->
     <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
         <!-- Sessão: Tabela -->
-        <section class="d-flex flex-column container px-0 py-2 rounded justify-content-center m-3">
-            <table class="custom-table bgc-primary mb-0">
+        <section class="d-flex flex-column container px-0 py-2 justify-content-center m-3">
+            <div class="bgc-primary rounded-top py-1"></div>
+            <table class="custom-table bgc-primary my-0 rounded">
                 <thead>
-                    <tr class="border-bottom">
+                    <tr class="border-bottom borderc-primary">
                         <th scope="col" colspan="4">
-                            <h3 class="fw-bold fcc-primary">Metas</h3>
+                            <h3 class="fw-bold fcc-primary mt-0 mb-2">Metas</h3>
                         </th>
                     </tr>
                     <tr>
                         <th scope="col">Nome</th>
                         <th scope="col">Data Limite</th>
-                        <th scope="col">Descrição</th>
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
@@ -44,7 +44,6 @@
                     <tr>
                         <td>Sem nome</td>
                         <td>31/03/2026</td>
-                        <td>Sem Descrição</td>
                         <td>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
@@ -60,7 +59,6 @@
                     <tr>
                         <td>Sem nome</td>
                         <td>31/03/2026</td>
-                        <td>Sem Descrição</td>
                         <td>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
@@ -76,7 +74,6 @@
                     <tr>
                         <td>Sem nome</td>
                         <td>31/03/2026</td>
-                        <td>Sem Descrição</td>
                         <td>
                             <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
@@ -91,9 +88,8 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="d-flex justify-content-center bgc-primary">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#modalNewGoal" class="link fcc-primary py-1">Nova
-                    Meta</a>
+            <div class="d-flex justify-content-center bgc-primary rounded-bottom">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalNewGoal" class="link fcc-primary my-1">Nova Meta</a>
             </div>
         </section>
     </main>
