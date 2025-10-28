@@ -31,10 +31,15 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 - Criação de arquivos JavaScript
 - Arquivos `README.md`, `SECURITY.md`, `LICENSE.md` e `CHANGELOG.md` adicionados
 
-### Corrigido
+### Correções
 - Menu lateral na página `issue-reports`
 - `README.md` Atualizado
 - Mudança de cores em `about-us.html`
 
+---
 
+## [0.2.0] - 2025-10-27
 
+### Correções
+- Página `about-project.html` modificada para o padrão das outras páginas
+- Rodapé modificado 
