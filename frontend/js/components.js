@@ -48,7 +48,7 @@ class CustomFooter extends HTMLElement {
                     <div class="text-center">
                         <img src="/imgs/logo.png" alt="Logo do projeto">
                     </div>
-                    <div class="text-center">
+                    <div class="text-center mt-1">
                         <h5 class="fcc-primary">BDIPI®</h5>
                     </div>
                     <div class="text-center fcc-primary px-5">
@@ -111,26 +111,26 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
 
-                <!-- CERTIFICAÇÕES -->
+                <!-- PÁGINAS -->
                 <div class="my-3 w-25 px-3">
                     <h5 class="fcc-primary">
-                        Certificações
+                        PÁGINAS
                     </h5>
                     <ul class="list-group list-group-flush bgc-primary">
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            AWS Certified Cloud Practitioner
+                            <a href="/" class="text-white text-decoration-none">Página Inicial</a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Laravel Certified Developer
+                            <a href="/pages/about-project" class="text-white text-decoration-none">Sobre o Projeto</a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Google UX Design Professional
+                            <a href="/pages/about-us" class="text-white text-decoration-none">Sobre Nós</a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Microsoft Azure Fundamentals (AZ-900)
+                            <a href="/pages/help" class="text-white text-decoration-none">Ajuda</a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            Python for Data Science (IBM)
+                            <a href="/pages/profile" class="text-white text-decoration-none">Perfil</a>
                         </li>
                     </ul>
                 </div>
@@ -254,4 +254,4 @@ class CustomModalTransaction extends HTMLElement {
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
 customElements.define('custom-menu', CustomMenu);
-customElements.define('custom-modal-transaction', CustomModalTransaction);
+customElements.define('custom-modal-transaction', CustomModalTransaction);  
