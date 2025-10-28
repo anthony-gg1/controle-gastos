@@ -114,7 +114,7 @@ class CustomFooter extends HTMLElement {
                 <!-- PÁGINAS -->
                 <div class="my-3 w-25 px-3">
                     <h5 class="fcc-primary">
-                        PÁGINAS
+                        Páginas
                     </h5>
                     <ul class="list-group list-group-flush bgc-primary">
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
@@ -250,8 +250,198 @@ class CustomModalTransaction extends HTMLElement {
 }
 // Fim do componente Modal de Transações
 
+// Componente Modal de Nova Meta
+class CustomModalNewGoal extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalNewGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNewGoalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalNewGoalLabel">Nova Meta</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="goalTitle" class="form-label text-dark">
+                                        Título da Meta
+                                    </label>    
+                                    <input type="text" class="form-control bgc-secondary text-dark" id="goalTitle" required />
+
+                                    <label for="goalValue" class="form-label mt-3 text-dark">
+                                        Valor (R$)
+                                    </label>
+                                    <input type="number" class="form-control bgc-secondary text-dark" id="goalValue" step="0.01" min="0.01" required />
+
+                                    <label for="goalDescription" class="form-label mt-3 text-dark">
+                                        Descrição
+                                    </label>
+                                    <textarea class="form-control bgc-secondary text-dark" id="goalDescription" rows="3"></textarea>
+
+                                    <label for="goalExpirationDate" class="form-label mt-3 text-dark">
+                                        Data Limite
+                                    </label>
+                                    <input type="date" class="form-control bgc-secondary text-dark" id="goalExpirationDate" required />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Meta Salva')">Salvar
+                                Meta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Nova Meta
+
+// Componente Modal de Editar Meta
+class CustomModalUpdateGoal extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalUpdateGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalUpdateGoalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalUpdateGoalLabel">Atualizar Meta</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="goalTitle" class="form-label text-dark">
+                                        Título da Meta
+                                    </label>    
+                                    <input type="text" class="form-control bgc-secondary text-dark" id="goalTitle" value="Meta" required />
+
+                                    <label for="goalValue" class="form-label mt-3 text-dark">
+                                        Valor (R$)
+                                    </label>
+                                    <input type="number" class="form-control bgc-secondary text-dark" id="goalValue" step="0.01" min="0.01" value="1000" required />
+
+                                    <label for="goalDescription" class="form-label mt-3 text-dark">
+                                        Descrição
+                                    </label>
+                                    <textarea class="form-control bgc-secondary text-dark" id="goalDescription" rows="3">Descrição detalhada da meta</textarea>
+
+                                    <label for="goalExpirationDate" class="form-label mt-3 text-dark">
+                                        Data Limite
+                                    </label>
+                                    <input type="date" class="form-control bgc-secondary text-dark" id="goalExpirationDate" value="2026-03-16" required />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Meta Salva')">Salvar
+                                Meta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Editar Meta
+
+// Componente Modal de Apagar Meta
+class CustomModalDeleteGoal extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalDeleteGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDeleteGoalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalDeleteGoalLabel">Deletar Meta</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            Deseja excluir essa meta?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger" onclick="alert('Meta Excluída')">Excluir Meta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Apagar Meta
+
+// Componente Modal de Descrever Meta
+class CustomModalDescribeGoal extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalGoalInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalGoalInfoLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalGoalInfoLabel">Descrição da Meta</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">   
+                            <div class="mb-3 d-flex flex-column">
+                                <label for="goalTitle" class="form-label text-dark">
+                                    Título da Meta
+                                </label>
+                                <p class="form-control bgc-secondary text-dark" id="goalTitle">
+                                    Meta Genérica
+                                </p>
+
+                                <label for="goalValue" class="form-label mt-3 text-dark">
+                                    Valor (R$)
+                                </label>
+                                <p class="form-control bgc-secondary text-dark" id="goalValue">
+                                    R$ 100.000,00
+                                </p>
+
+                                <label for="goalDescription" class="form-label mt-3 text-dark">
+                                    Descrição
+                                </label>
+                                <p class="form-control bgc-secondary text-dark" id="goalDescription" rows="3">
+                                    Simples descrição da meta.
+                                </p>
+
+                                <label for="goalExpirationDate" class="form-label mt-3 text-dark">
+                                    Data Limite
+                                </label>
+                                <p class="form-control bgc-secondary text-dark" id="goalExpirationDate">
+                                    10/03/2034
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Descrever Meta
+
 // Definição de componetes
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
 customElements.define('custom-menu', CustomMenu);
 customElements.define('custom-modal-transaction', CustomModalTransaction);  
+customElements.define('custom-modal-new-goal', CustomModalNewGoal);  
+customElements.define('custom-modal-update-goal', CustomModalUpdateGoal);
+customElements.define('custom-modal-delete-goal', CustomModalDeleteGoal);
+customElements.define('custom-modal-describe-goal', CustomModalDescribeGoal);

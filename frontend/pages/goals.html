@@ -29,7 +29,9 @@
             <table class="custom-table bgc-primary mb-0">
                 <thead>
                     <tr class="border-bottom">
-                        <th scope="col" colspan="4"><h3 class="fw-bold fcc-primary">Metas</h3></th>
+                        <th scope="col" colspan="4">
+                            <h3 class="fw-bold fcc-primary">Metas</h3>
+                        </th>
                     </tr>
                     <tr>
                         <th scope="col">Nome</th>
@@ -44,13 +46,13 @@
                         <td>31/03/2026</td>
                         <td>Sem Descrição</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteGoal">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalGoalInfo">
                                 <i class="bi bi-info-circle fcc-primary fs-4"></i>
                             </button>
                         </td>
@@ -60,13 +62,13 @@
                         <td>31/03/2026</td>
                         <td>Sem Descrição</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteGoal">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalGoalInfo">
                                 <i class="bi bi-info-circle fcc-primary fs-4"></i>
                             </button>
                         </td>
@@ -76,21 +78,22 @@
                         <td>31/03/2026</td>
                         <td>Sem Descrição</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateGoal">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteGoal">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalGoalInfo">
                                 <i class="bi bi-info-circle fcc-primary fs-4"></i>
                             </button>
                         </td>
                     </tr>
                 </tbody>
-            </table> 
+            </table>
             <div class="d-flex justify-content-center bgc-primary">
-                <a href="#" class="link fcc-primary py-1">Nova Meta</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalNewGoal" class="link fcc-primary py-1">Nova
+                    Meta</a>
             </div>
         </section>
     </main>
@@ -99,6 +102,13 @@
     <!-- Rodapé -->
     <custom-footer></custom-footer>
     <!-- Fim de rodapé -->
+
+    <!-- Modals -->
+    <custom-modal-new-goal></custom-modal-new-goal>
+    <custom-modal-update-goal></custom-modal-update-goal>
+    <custom-modal-delete-goal></custom-modal-delete-goal>
+    <custom-modal-describe-goal></custom-modal-describe-goal>
+    <!-- Fim dos Modals -->
 
     <script src="/js/components.js"></script>
     <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
