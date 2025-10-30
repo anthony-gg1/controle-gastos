@@ -23,7 +23,7 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [0.1.0] - 2025-10-24
 
-### Adicionado
+### Adições
 - Todas as Páginas feitas
 - Página `help.html` criada
 - Criação de uma API falsa para testes
@@ -40,10 +40,12 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [0.2.0] - 2025-10-27
 
+### Adições
+- Criação de modais para manipular as metas
+
 ### Correções
 - Página `about-project.html` modificada para o padrão das outras páginas
 - Rodapé modificado
-- Criação de modais para manipular as metas
 - Página `history.html` modificada para o padrão de outras tabelas
 - Logo do projeto refatorada
 
