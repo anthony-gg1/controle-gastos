@@ -197,8 +197,11 @@ class CustomProfile extends HTMLElement {
         super();
         this.innerHTML = `
             <div class="offcanvas offcanvas-end" tabindex="-1" id="side-profile" aria-labelledby="side-profileLabel">
-                <div class="offcanvas-header bgc-primary">
-                    <h2 class="offcanvas-title w-100 text-center fcc-primary" id="side-profileLabel">Perfil</h2>
+                <div class="offcanvas-header bgc-primary d-flex justify-content-between">
+                    <h2 class="offcanvas-title text-center fcc-primary" id="side-profileLabel">Perfil</h2>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#modalUpdateProfile">
+                        <i class="bi bi-pencil-square fcc-primary fs-3"></i>
+                    </button>
                 </div>
                 <div class="offcanvas-body">
                     <div class="border-2 border-bottom pe-3 borderc-primary">
@@ -224,10 +227,60 @@ class CustomProfile extends HTMLElement {
                     © 2025 BDIPI®. Todos os direitos reservados.
                 </div>
             </div>
+            <custom-modal-update-profile></custom-modal-update-profile>
         `;
     }
 }
 // Fim do componente Perfil
+
+// Componente Modal de Editar Perfil
+class CustomModalUpdateProfile extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalUpdateProfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalUpdateProfileLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalUpdateProfileLabel">Editar Perfil</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="transactionType" class="form-label text-dark">
+                                        Nome
+                                    </label>
+                                    <input type="text" class="form-control bgc-secondary text-dark" id="in-name" value="Usuário" required />
+
+                                    <label for="in-email" class="form-label mt-3 text-dark">
+                                        E-mail
+                                    </label>
+                                    <input type="email" class="form-control bgc-secondary text-dark" id="in-email" value="test@email.com" required />
+
+                                    <label for="in-phone" class="form-label mt-3 text-dark">
+                                        Telefone
+                                    </label>
+                                    <input type="text" class="form-control bgc-secondary text-dark" id="in-phone" value="(11) 22233-4444" required />
+
+                                    <label for="in-cpf" class="form-label mt-3 text-dark">
+                                        CPF
+                                    </label>
+                                    <input type="text" class="form-control bgc-secondary text-dark" id="in-cpf" value="123.456.789-00" required />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Transação Salva')">Salvar Alterações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Modal de Editar Perfil
 
 // Componente Modal de Transações
 class CustomModalTransaction extends HTMLElement {
@@ -479,6 +532,7 @@ customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
 customElements.define('custom-menu', CustomMenu);
 customElements.define('custom-profile', CustomProfile);
+customElements.define('custom-modal-update-profile', CustomModalUpdateProfile);
 customElements.define('custom-modal-transaction', CustomModalTransaction);  
 customElements.define('custom-modal-new-goal', CustomModalNewGoal);  
 customElements.define('custom-modal-update-goal', CustomModalUpdateGoal);
