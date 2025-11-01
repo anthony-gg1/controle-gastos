@@ -21,6 +21,10 @@
     <custom-menu></custom-menu>
     <!-- Fim de Menu -->
 
+    <!-- Perfil -->
+    <custom-profile></custom-profile>
+    <!-- Fim de Perfil -->
+
     <!-- Main -->
     <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
         <!-- Sessão: Dados Bancários -->
@@ -98,6 +102,12 @@
 
     <script src="/js/Components.js"></script>
     <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        let html_elemement = document.getElementById("side-profile");
+        let off_canvas = new bootstrap.Offcanvas(html_elemement);
+
+        off_canvas.show();
+    </script>
 </body>
 
 </html>
