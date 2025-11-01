@@ -1,4 +1,5 @@
-﻿class User {
+﻿// Model para Usuário
+class User {
     constructor() {
         this.name = null;
         this.cpf = null;
@@ -8,6 +9,7 @@
     }
 }
 
+// Model para Transação
 class Transaction {
     constructor() {
         this.id = null;
@@ -17,6 +19,7 @@ class Transaction {
     }
 }
 
+// Model para Meta
 class Goal {
     constructor() {
         this.id = null
