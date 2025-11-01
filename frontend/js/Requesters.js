@@ -1,4 +1,5 @@
-﻿class User {
+﻿// Classe para realizar requisições para User
+class UserRequester {
 
     // Métodos para Requisição
     static getData() {
@@ -11,7 +12,8 @@
 
 }
 
-class Goal {
+// Classe para realizar requisições para Goal
+class GoalRequester {
 
     // Métodos para buscar registros
     static findAll() {
@@ -36,7 +38,8 @@ class Goal {
 
 }
 
-class Transaction {
+// TransacClasse para realizar requisições para tion
+class TransactionRequester {
    
     // Métodos para buscar registros
     static findAll() {
