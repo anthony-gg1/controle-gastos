@@ -24,9 +24,9 @@ class CustomHeader extends HTMLElement {
 
             <!-- PERFIL -->
             <div>
-                <a href="/pages/profile" class="btn fcc-primary fs-1 p-0 mx-3">
+                <button class="btn fcc-primary fs-1 p-0 mx-3" data-bs-toggle="offcanvas" data-bs-target="#side-profile" aria-controls="side-profile">
                     <i class="bi bi-person-circle p-0"></i>
-                </a>
+                </button>
             </div>
         `;
     }
@@ -190,6 +190,44 @@ class CustomMenu extends HTMLElement {
     }
 }
 // Fim do componente Menu
+
+// Componente Perfil
+class CustomProfile extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="side-profile" aria-labelledby="side-profileLabel">
+                <div class="offcanvas-header bgc-primary">
+                    <h2 class="offcanvas-title w-100 text-center fcc-primary" id="side-profileLabel">Perfil</h2>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="border-2 border-bottom pe-3 borderc-primary">
+                        <div class="mb-2 text-center">
+                            <i class="bi bi-person-circle display-1 text-primary"></i>
+                        </div>
+                        <h3 class="text-primary text-center fw-bold">Usuário</h3>
+                    </div>
+
+                    <div class="pe-3 borderc-primary text-primary text-start mt-3 fs-5">
+                        <div>
+                            <span class="fw-bold">E-mail:</span> teste@email.com
+                        </div>
+                        <div>
+                            <span class="fw-bold">Telefone:</span> (11) 22233-4444
+                        </div>
+                        <div>
+                            <span class="fw-bold">CPF:</span> 123.456.789-00
+                        </div>
+                    </div>
+                </div>
+                <div class="bgc-primary fcc-primary py-2 text-center w-100">
+                    © 2025 BDIPI®. Todos os direitos reservados.
+                </div>
+            </div>
+        `;
+    }
+}
+// Fim do componente Perfil
 
 // Componente Modal de Transações
 class CustomModalTransaction extends HTMLElement {
@@ -440,6 +478,7 @@ class CustomModalDescribeGoal extends HTMLElement {
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
 customElements.define('custom-menu', CustomMenu);
+customElements.define('custom-profile', CustomProfile);
 customElements.define('custom-modal-transaction', CustomModalTransaction);  
 customElements.define('custom-modal-new-goal', CustomModalNewGoal);  
 customElements.define('custom-modal-update-goal', CustomModalUpdateGoal);
