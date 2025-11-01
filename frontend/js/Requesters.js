@@ -1,11 +1,24 @@
-﻿// Classe para realizar requisições para User
+﻿import { FAKE_API_LOCAL } from "./Helpers.js"
+
+// Classe para realizar requisições para User
 class UserRequester {
 
     // Métodos para Requisição
     static getData() {
-        // Puxar dados
-        return {};
+        let data = fetch(FAKE_API_LOCAL + "/user.php")
+            .then(result => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return result.json();
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            })
+        
+        return data;
     }
+    
     static setData(data) {
         // Puxar definir dados
     }
