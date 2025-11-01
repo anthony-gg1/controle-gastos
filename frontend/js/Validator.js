@@ -56,4 +56,28 @@
 
         return true;
     }
+
+    // Método para validar Telefones
+    static validatePhoneNumber(value) {
+        // Removendo espaços nas extremidades
+        value = value.trim();
+
+        // Removendo parentêses, espaço e hífen
+        value = value.replace("(", "");
+        value = value.replace(")", "");
+        value = value.replace(" ", "");
+        value = value.replace("-", "");
+
+        // Verificando tamanho
+        if (![11, 10].includes(value.length)) {
+            return false;
+        }
+
+        // Verificando se há  apenas números
+        if (!/^[0-9]+$/.test(value)) {
+            return false;
+        }
+
+        return true;
+    }
 }
