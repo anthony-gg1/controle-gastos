@@ -1,2 +1,5 @@
 ﻿// Endereço da API falsa
-export const FAKE_API_LOCAL = "http://localhost/fake-api"
+const FAKE_API_URL = "http://localhost/fake-api"
+
+// Endereco da API
+export const API_URL = FAKE_API_URL;

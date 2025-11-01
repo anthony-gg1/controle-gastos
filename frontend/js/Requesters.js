@@ -1,11 +1,11 @@
-﻿import { FAKE_API_LOCAL } from "./Helpers.js"
+﻿import { API_URL } from "./Helpers.js"
 
 // Classe para realizar requisições para User
 class UserRequester {
 
-    // Métodos para Requisição
+    // Método para requisitar os dados
     static getData() {
-        let data = fetch(FAKE_API_LOCAL + "/user.php")
+        let data = fetch(API_URL + "/user.php")
             .then(result => {
                 if (!result.ok) {
                     throw new Error("Requisição mal sucessida");
