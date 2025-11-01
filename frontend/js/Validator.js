@@ -47,4 +47,13 @@
         return true;
     }
 
+    // Método para validar Senhas
+    static validatePassword(value) {
+        // Verificando tamanho
+        if (value.length < 8) {
+            return false;
+        }
+
+        return true;
+    }
 }
