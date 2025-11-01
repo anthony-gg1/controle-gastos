@@ -6,7 +6,7 @@ class UserRequester {
 
     // Método para requisitar os dados
     static getData() {
-        let data = fetch(API_URL + "/user.php")
+        let data = fetch(API_URL + END_POINTS.user)
             .then(result => {
                 if (!result.ok) {
                     throw new Error("Requisição mal sucessida");
@@ -15,11 +15,12 @@ class UserRequester {
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
-            })
+            });
         
         return data;
     }
     
+    // Método para atualiza dados
     static setData(data) {
         // Puxar definir dados
     }
@@ -40,22 +41,27 @@ class GoalRequester {
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
-            })
+            });
         return data;
     }
 
+    // Método para buscar uma meta específica 
     static findById(id) {
         // Buscar registros
         return {};
     }
 
-    // Métodos para realizar alterações nos registros
+    // Método para criar uma nova meta
     static save(data) {
         // Salvar registro
     }
+
+    // Método para editar uma meta
     static update(data) {
         // Atualizar registro
     }
+
+    // Método para remover uma meta
     static delete(id) {
         // Apagar registro
     }
@@ -76,21 +82,27 @@ class TransactionRequester {
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
-            })
+            });
         return data;
     }
+
+    // Método para bustar uma transação específica
     static findById(id) {
         // Buscar registros
         return {};
     }
 
-    // Métodos para realizar alterações nos registros
+    // Método para salvar transação
     static save(data) {
         // Salvar registro
     }
+
+    // Método para editar transação
     static update(data) {
         // Atualizar registro
     }
+
+    // Método para apgar transação    
     static delete(id) {
         // Apagar registro
     }
