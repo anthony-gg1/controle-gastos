@@ -43,7 +43,7 @@ class GoalRequester {
             })
         return data;
     }
-    
+
     static findById(id) {
         // Buscar registros
         return {};
@@ -65,10 +65,19 @@ class GoalRequester {
 // TransacClasse para realizar requisições para tion
 class TransactionRequester {
    
-    // Métodos para buscar registros
+    // Método para listar transações
     static findAll() {
-        // Listar registros
-        return [];
+        let data = fetch(API_URL + END_POINTS.transactions)
+            .then(result => {
+                if (!result.ok) {
+                    throw new Error("Falha em listar transações");
+                }
+                return result.json();
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            })
+        return data;
     }
     static findById(id) {
         // Buscar registros
