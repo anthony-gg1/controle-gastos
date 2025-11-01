@@ -53,6 +53,9 @@ class GoalRequester {
                     throw new Error("Erro em buscar uma meta")
                 }
                 return result.json();
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
             });
         return data;
     }
@@ -101,6 +104,9 @@ class TransactionRequester {
                 }
                 return result.json();
             })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
         return data;
     }
 
