@@ -1,4 +1,5 @@
-﻿import { API_URL } from "./Helpers.js"
+﻿import { API_URL } from "./Helpers.js";
+import { END_POINTS } from "./Helpers.js";
 
 // Classe para realizar requisições para User
 class UserRequester {
@@ -28,11 +29,21 @@ class UserRequester {
 // Classe para realizar requisições para Goal
 class GoalRequester {
 
-    // Métodos para buscar registros
+    // Método para listar metas
     static findAll() {
-        // Listar registros
-        return [];
+        let data = fetch(API_URL + END_POINTS.goals)
+            .then(result => {
+                if (!result.ok) {
+                    throw new Error("Erro em listar metas");
+                }
+                return result.json();
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            })
+        return data;
     }
+    
     static findById(id) {
         // Buscar registros
         return {};
