@@ -1,5 +1,6 @@
 ﻿class Validator {
 
+    // Método para validar CPFs
     static validateCpf(value) {
         // Removendo espaços
         value = value.trim();
@@ -30,5 +31,5 @@
 
         return true;
     }
-    
+
 }
