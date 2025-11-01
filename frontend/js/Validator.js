@@ -40,5 +40,3 @@
         return true;
     }
 }
-
-console.log(Validator.validateCpf("111.000.222-20"));
