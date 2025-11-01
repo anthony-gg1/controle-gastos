@@ -33,8 +33,7 @@
     }
 
     // Método para validar E-mails
-    static validateEmail() {
-        let value = "jc@jc.com";
+    static validateEmail(value) {
         // Verificando se o primeiro dígito é um número
         if (/^[0-9]$/.test(value.charAt(0))) {
             return false;
@@ -49,5 +48,3 @@
     }
 
 }
-
-console.log(Validator.validateEmail());
