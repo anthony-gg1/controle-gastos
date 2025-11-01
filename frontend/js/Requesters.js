@@ -47,8 +47,14 @@ class GoalRequester {
 
     // Método para buscar uma meta específica 
     static findById(id) {
-        // Buscar registros
-        return {};
+        let data = fetch(API_URL + END_POINTS.goals * `${id}`)
+            .then(result => {
+                if (!result.ok) {
+                    throw new Error("Erro em buscar uma meta")
+                }
+                return result.json();
+            });
+        return data;
     }
 
     // Método para criar uma nova meta
