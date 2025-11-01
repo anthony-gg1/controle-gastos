@@ -32,4 +32,22 @@
         return true;
     }
 
+    // Método para validar E-mails
+    static validateEmail() {
+        let value = "jc@jc.com";
+        // Verificando se o primeiro dígito é um número
+        if (/^[0-9]$/.test(value.charAt(0))) {
+            return false;
+        }
+
+        // Verificando com base na estrutura de um E-mail padrão
+        if (!/^[a-zA-Z0-9_.]+[@][a-zA-Z0-9_.]+$/.test(value)) {
+            return false
+        }
+
+        return true;
+    }
+
 }
+
+console.log(Validator.validateEmail());
