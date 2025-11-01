@@ -86,7 +86,7 @@
                 </tbody>
             </table>
             <div class="d-flex justify-content-center bgc-primary rounded-bottom">
-                <a href="#" class="link fcc-primary my-1">Emitir Relatório</a>
+                <a href="#" class="link fcc-primary my-1" data-bs-toggle="modal" data-bs-target="#modalSelectTransactions">Emitir Relatório</a>
             </div>
         </section>
     </main>
@@ -95,6 +95,10 @@
     <!-- Rodapé -->
     <custom-footer></custom-footer>
     <!-- Fim de rodapé -->
+
+    <!-- Modal de selação de transações para impressão -->
+    <custom-modal-transaction-printing />
+    <!-- Fim do modal de selação de transações para impressão -->
 
     <script src="/js/Components.js"></script>
     <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>

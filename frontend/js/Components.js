@@ -527,6 +527,71 @@ class CustomModalDescribeGoal extends HTMLElement {
 }
 // Fim do componente Modal de Descrever Meta
 
+// Componente Modal de Selecionar Transações para impressão
+class CustomModalSelectTransactionsForPrinting extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalSelectTransactions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="modalSelectTransactionsLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalSelectTransactionsLabel">Imprimir Relatório</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Data</th>
+                                        <th scope="col">Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="fw-normal">
+                                    <tr>
+                                        <td><input type="checkbox" checked="true"></td>
+                                        <td>+ 90,00</td>
+                                        <td>10/10/2025</td>
+                                        <td>Recebeu Salário</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" checked="true"></td>
+                                        <td>+ 150,00</td>
+                                        <td>10/10/2025</td>
+                                        <td>recebeu mesada</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" checked="true"></td>
+                                        <td>- 12,00</td>
+                                        <td>10/10/2025</td>
+                                        <td>Comprou pão</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <label class="form-label">Formato: </label>
+                            <select class="form-select">
+                                <option value="csv">CSV</option>
+                                <option value="json">JSON</option>
+                                <option value="txt">TXT</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Imprimir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+}
+// Fim do componente Modal de Selecionar Transações para impressão
+
 // Definição de componetes
 customElements.define('custom-header', CustomHeader);
 customElements.define('custom-footer', CustomFooter);
@@ -538,3 +603,4 @@ customElements.define('custom-modal-new-goal', CustomModalNewGoal);
 customElements.define('custom-modal-update-goal', CustomModalUpdateGoal);
 customElements.define('custom-modal-delete-goal', CustomModalDeleteGoal);
 customElements.define('custom-modal-describe-goal', CustomModalDescribeGoal);
+customElements.define('custom-modal-transaction-printing', CustomModalSelectTransactionsForPrinting);
