@@ -88,8 +88,14 @@ class TransactionRequester {
 
     // Método para bustar uma transação específica
     static findById(id) {
-        // Buscar registros
-        return {};
+        data = fetch(API_URL + END_POINTS.transactions + `/${id}`)
+            .then(result => {
+                if (!result.ok) {
+                    throw new Error("Ocorreu um erro ao buscar uma transação")
+                }
+                return result.json();
+            })
+        return data;
     }
 
     // Método para salvar transação
