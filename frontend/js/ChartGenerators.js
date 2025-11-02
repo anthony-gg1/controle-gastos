@@ -29,8 +29,19 @@
                     }
                 },
                 legend: {
+                    position: "bottom",
+                    title: {
+                        display: true,
+                        padding: 10,
+                        text: "Compara o valor total em Receita com o valor total em Despesas",
+                        color: "#fff",
+                        font: {
+                            weight: 'bolder'
+                        }
+                    },
                     labels: {
-                        color: '#fff' // 🟢 Cor do texto da legenda
+                        color: '#fff',
+                        padding: 10
                     }
                 }
             }
