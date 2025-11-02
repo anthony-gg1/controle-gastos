@@ -130,7 +130,7 @@ class CustomFooter extends HTMLElement {
                             <a href="/pages/help" class="text-white text-decoration-none">Ajuda</a>
                         </li>
                         <li class="list-group-item bgc-primary fcc-secondary fs-6 px-0">
-                            <a href="/pages/profile" class="text-white text-decoration-none">Perfil</a>
+                            <a href="/pages/history" class="text-white text-decoration-none">Histórico</a>
                         </li>
                     </ul>
                 </div>
