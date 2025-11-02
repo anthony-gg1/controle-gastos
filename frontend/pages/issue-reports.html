@@ -2,76 +2,61 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Controle de Gastos</title>
-  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="/css/colors.css" />
-  <link rel="stylesheet" href="/css/utils.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Gastos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
 
-  <!-- Header -->
-  <custom-header></custom-header>
-  <!-- Fim do Header -->
+    <!-- Header -->
+    <custom-header></custom-header>
+    <!-- Fim do Header -->
 
-  <!-- Menu -->
-  <custom-menu></custom-menu>
-  <!-- Fim de Menu -->
+    <!-- Menu -->
+    <custom-menu></custom-menu>
+    <!-- Fim de Menu -->
 
-  <!-- Perfil -->
-  <custom-profile></custom-profile>
-  <!-- Fim de Perfil -->
+    <!-- Perfil -->
+    <custom-profile></custom-profile>
+    <!-- Fim de Perfil -->
 
-  <!-- Main -->
-  <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around flex-column">
-    <div class="d-flex justify-content-around mb-3">
-      <!-- Grafico de pizza -->
-      <section
-        class="bgc-primary text-light d-flex flex-column justify-content-center align-items-center gap-5 p-3 rounded">
-        <div class="d-flex align-items-center gap-4">
-          <div class="d-flex align-items-center gap-2">
-            <div class="bg-success p-3 rounded-1"></div>
-            <span class="fs-5 fcc-primary">Ganhos</span>
-          </div>
-
-          <div class="d-flex align-items-center gap-2">
-            <div class="bg-danger p-3 rounded-1"></div>
-            <span class="fs-5 fcc-primary">Gastos</span>
-          </div>
-        </div>
-
-        <div>Gráfico de pizza</div>
-      </section>
-
-      <!-- Ganhos e perdas -->
-      <div class="bgc-primary p-3 rounded d-flex flex-wrap justify-content-around align-items-center ">
-        <section>
-          <div class="class=d-flex  flex-column fcc-primary fs-4 mx-2 gap-2">
-            <h2 class="display-5 fw-bold"> Gasto Total: R$ 450,00</h2>
-            <h2 class="display-5 fw-bold">Ganho Total: R$ 450,00</h2>
-          </div>
+    <!-- Main -->
+    <main class="bgc-secondary text-center py-5 px-3 flex-grow-1 d-flex justify-content-around flex-column">
+        <section class="container d-flex justify-content-around flex-wrap bgc-primary py-2 rounded">
+            <div class="my-2">
+                <canvas id="transactionPieChart" width="400" height=400"></canvas>
+            </div>
+            <div class="my-2">
+                <canvas id="transactionsBytrimester" width="400" height=400"></canvas>
+            </div>
         </section>
-      </div>
-    </div>
+    </main>
+    <!-- Fim do Main -->
 
-    <!-- Grafico de barras -->
-    <section
-      class="bgc-primary text-light d-flex flex-column justify-content-center align-items-center gap-5 p-3 rounded">
-      <h2>Gráfico de Barras </h2>
-    </section>
+    <!-- Rodapé -->
+    <custom-footer></custom-footer>
+    <!-- Fim de rodapé -->
 
-  </main>
-  <!-- Fim do Main -->
+    <script src="/js/Components.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module">
+         import { generateTransactionPieChart } from "/js/ChartGenerators.js";
+         import { generateTransactionsBytrimesterBarChart } from "/js/ChartGenerators.js";
 
-  <!-- Rodapé -->
-  <custom-footer></custom-footer>
-  <!-- Fim de rodapé -->
-
-  <script src="/js/Components.js"></script>
-  <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+         generateTransactionPieChart("transactionPieChart", 70, 30);
+         generateTransactionsBytrimesterBarChart("transactionsBytrimester", [
+            {totalRevenue: 1240, totalExpenses: 430},
+            {totalRevenue: 1500, totalExpenses: 780},
+            {totalRevenue: 2400, totalExpenses: 890},
+            {totalRevenue: 980,  totalExpenses: 1200}
+         ]);
+    </script>
 </body>
 
 </html>
