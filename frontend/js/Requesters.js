@@ -47,7 +47,7 @@ class GoalRequester {
 
     // Método para buscar uma meta específica 
     static findById(id) {
-        let data = fetch(API_URL + END_POINTS.goals * `${id}`)
+        let data = fetch(API_URL + END_POINTS.goals + `/${id}`)
             .then(result => {
                 if (!result.ok) {
                     throw new Error("Erro em buscar uma meta")
