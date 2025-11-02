@@ -1,4 +1,5 @@
-﻿export function generateTransactionPieChart(canvasId, revenueCount, expenseCount) {
+﻿// Função para gerar Gráfico de Pizza para Transações
+export function generateTransactionPieChart(canvasId, revenueCount, expenseCount) {
     const ctx = document.getElementById(canvasId);
 
     const data = {
@@ -51,6 +52,7 @@
     })
 }
 
+// Função para gerar Gráfico de Barras para Transações
 export function generateTransactionsBytrimesterBarChart(canvasId, valuesBytrimester) {
     const ctx = document.getElementById(canvasId);
 
@@ -134,6 +136,7 @@ export function generateTransactionsBytrimesterBarChart(canvasId, valuesBytrimes
     })
 }
 
+// Função para gerar Gráfico de Rádio para Gategorias de Ganhos 
 export function generateRevenueCategoriesComparisionPolarAreaChart(canvasId, valuesByCategorie) {
     const ctx = document.getElementById(canvasId);
 
@@ -229,6 +232,7 @@ export function generateRevenueCategoriesComparisionPolarAreaChart(canvasId, val
     })
 }
 
+// Função para gerar Gráfico de Rádio para Gategorias de Gastos 
 export function generateExpensesCategoriesComparisionPolarAreaChart(canvasId, valuesByCategorie) {
     const ctx = document.getElementById(canvasId);
 
