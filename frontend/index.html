@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Controle de Gastos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/colors.css" />
@@ -70,8 +71,6 @@
                     <i class="bi bi-cash fs-1"></i> Transação
                 </a>
 
-
-
                 <a href="/pages/goals" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
                         class="bi bi-cash-stack fs-1"></i> Meta</a>
                 <a href="/pages/history" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
@@ -82,11 +81,7 @@
 
             <!-- Relatório -->
             <div class="bgc-primary p-3 rounded">
-                <h1 style="color: aliceblue;">GRÁFICO (POR DEPOIS)</h1>
-                <p>
-                    <br><br><br><br><br>
-                    <br><br><br><br>
-                </p>
+                <canvas id="transactionPieChart" width="300" height=300"></canvas>
             </div>
         </section>
     </main>
@@ -102,6 +97,11 @@
 
     <script src="/js/Components.js"></script>
     <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module">
+         import { generateTransactionPieChart } from "/js/ChartGenerators.js";
+
+         generateTransactionPieChart("transactionPieChart", 70, 30);
+    </script>
 </body>
 
 </html>
