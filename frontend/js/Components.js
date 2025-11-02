@@ -326,7 +326,7 @@ class CustomModalTransaction extends HTMLElement {
                                         <option value="utilities">Contas</option>
                                         <option value="others">Outros</option>
                                     </select>
-                                    <select class="form-select bgc-secondary text-dark" id="income_category" required>
+                                    <select class="form-select bgc-secondary text-dark" id="income_category" style="display: none;" required>
                                         <option value="salary">Salário</option>
                                         <option value="investments">Investimentos</option>
                                         <option value="freelance">Freelance</option>
