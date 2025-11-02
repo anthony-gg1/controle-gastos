@@ -133,3 +133,193 @@ export function generateTransactionsBytrimesterBarChart(canvasId, valuesBytrimes
         options: options
     })
 }
+
+export function generateRevenueCategoriesComparisionPolarAreaChart(canvasId, valuesByCategorie) {
+    const ctx = document.getElementById(canvasId);
+
+    const color = "#56FFB2";
+
+    const data = {
+        labels: ["Salário", "Investimentos", "Freelance", "Doações", "Outros"],
+        datasets: [{
+            label: 'Receita',
+            data: [
+                valuesByCategorie.salary,
+                valuesByCategorie.investments,
+                valuesByCategorie.freelance,
+                valuesByCategorie.gifts,
+                valuesByCategorie.others
+            ],
+            borderColor: color,
+            backgroundColor: color + "80",
+        }]
+    };
+
+    const options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: "Lucro por Categoria",
+                color: "#fff",
+                font: {
+                    size: 24,
+                    weight: "bold"
+                }
+            },
+            legend: {
+                position: "bottom",
+                title: {
+                    display: true,
+                    padding: 10,
+                    text: "Compara a quantidade de gastos por categoria",
+                    color: "#fff",
+                    font: {
+                        weight: 'bolder'
+                    }
+                },
+                labels: {
+                    color: '#fff',
+                    padding: 10
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#ffffff'
+                },
+                grid: {
+                    color: '#525252'
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#ffffffff'
+                },
+                grid: {
+                    color: '#525252'
+                }
+            },
+            r: {
+                ticks: {
+                    color: '#525252',
+                    font: {
+                        size: 14
+                    }
+                },
+                grid: {
+                    color: '#929292'
+                },
+                pointLabels: {
+                    color: '#fff',
+                    font: {
+                        size: 16
+                    }
+                }
+            }
+        }
+    }
+
+    const chart = new Chart(ctx, {
+        type: 'radar',
+        data: data,
+        options: options
+    })
+}
+
+export function generateExpensesCategoriesComparisionPolarAreaChart(canvasId, valuesByCategorie) {
+    const ctx = document.getElementById(canvasId);
+
+    const color = "#FF5F61";
+
+    const data = {
+        labels: ["Comida", "Transporte", "Entretenimento", "Contas", "Outros"],
+        datasets: [{
+            label: 'Despesas',
+            data: [
+                valuesByCategorie.food,
+                valuesByCategorie.transportation,
+                valuesByCategorie.entertainment,
+                valuesByCategorie.utilities,
+                valuesByCategorie.others
+            ],
+            borderColor: color,
+            backgroundColor: color + "80",
+        }]
+    };
+
+    const options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: "Gasto por Categoria",
+                color: "#fff",
+                font: {
+                    size: 24,
+                    weight: "bold"
+                }
+            },
+            legend: {
+                position: "bottom",
+                title: {
+                    display: true,
+                    padding: 10,
+                    text: "Compara a quantidade de gastos por categoria",
+                    color: "#fff",
+                    font: {
+                        weight: 'bolder'
+                    }
+                },
+                labels: {
+                    color: '#fff',
+                    padding: 10
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#ffffff'
+                },
+                grid: {
+                    color: '#525252'
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#ffffffff'
+                },
+                grid: {
+                    color: '#525252'
+                }
+            },
+            r: {
+                ticks: {
+                    color: '#525252',
+                    font: {
+                        size: 14
+                    }
+                },
+                grid: {
+                    color: '#929292'
+                },
+                pointLabels: {
+                    color: '#fff',
+                    font: {
+                        size: 16
+                    }
+                }
+            }
+        }
+    }
+
+    const chart = new Chart(ctx, {
+        type: 'radar',
+        data: data,
+        options: options
+    })
+}
