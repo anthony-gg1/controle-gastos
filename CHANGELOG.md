@@ -54,3 +54,27 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 - Modal para editar transação
 - Modal para excluir transação
 - Modal para editar dados do perfil do usuário
+
+---
+
+## [0.3.0] - 2025-11-01
+
+### Adições
+- Função para gerar gráficos adicionada
+- Funções para fazer requisições à API
+- Funções de Validação adicionados
+- Modal para emissão de relatórios
+- Modal de editar perfil adicionado
+- Página de relatórios adicionada
+
+### Correções
+- Página `profile.html` modificada para um offcanvas
+- Biblioteca Chart.js removida das pastas do projeto
+- Footer modificado
+
+### Em desenvolvimento
+- Modal para editar transação
+- Modal para excluir transação
+- Funções para alterar dados no banco de dados
+- Ajustar logo do projeto
+- Impressão de relatórios em diferentes formatos
