@@ -77,4 +77,4 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 - Modal para excluir transação
 - Funções para alterar dados no banco de dados
 - Ajustar logo do projeto
-- Impressão de relatórios em diferentes formatos
+- Renderização de dados
