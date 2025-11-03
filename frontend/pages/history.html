@@ -26,15 +26,25 @@
     <custom-profile></custom-profile>
     <!-- Fim de Perfil -->
 
+    <!-- Modal de Editar transações -->
+    <custom-modal-update-transaction></custom-modal-update-transaction>
+    <!-- Fim do modal de Editar transações -->
+
+    <!-- Modal para deletar transações -->
+    <custom-modal-delete-transaction></custom-modal-delete-transaction>
+    <!-- Fim do Modal para deletar transações -->
+
     <!-- Main -->
-     <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
+    <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
         <!-- Sessão: Tabela -->
         <section class="d-flex flex-column container px-0 py-2 justify-content-center m-3">
             <div class="bgc-primary rounded-top py-1"></div>
             <table class="custom-table bgc-primary my-0 rounded">
                 <thead>
                     <tr class="border-bottom">
-                        <th scope="col" colspan="4"><h3 class="fw-bold fcc-primary">Histórico</h3></th>
+                        <th scope="col" colspan="4">
+                            <h3 class="fw-bold fcc-primary">Histórico</h3>
+                        </th>
                     </tr>
                     <tr>
                         <th scope="col">Valor</th>
@@ -49,10 +59,10 @@
                         <td>10/10/2025</td>
                         <td>Recebeu Salário</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
                         </td>
@@ -62,10 +72,10 @@
                         <td>10/10/2025</td>
                         <td>recebeu mesada</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
                         </td>
@@ -75,10 +85,10 @@
                         <td>10/10/2025</td>
                         <td>Comprou pão</td>
                         <td>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
                                 <i class="bi bi-pencil-square fcc-positive fs-4"></i>
                             </button>
-                            <button class="btn">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
                                 <i class="bi bi-trash3 fcc-negative fs-4"></i>
                             </button>
                         </td>
@@ -86,10 +96,12 @@
                 </tbody>
             </table>
             <div class="d-flex justify-content-center bgc-primary rounded-bottom">
-                <a href="#" class="link fcc-primary my-1" data-bs-toggle="modal" data-bs-target="#modalSelectTransactions">Emitir Relatório</a>
+                <a href="#" class="link fcc-primary my-1" data-bs-toggle="modal"
+                    data-bs-target="#modalSelectTransactions">Emitir Relatório</a>
             </div>
         </section>
     </main>
+
     <!-- Fim de Main -->
 
     <!-- Rodapé -->

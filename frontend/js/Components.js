@@ -348,12 +348,109 @@ class CustomModalTransaction extends HTMLElement {
 }
 // Fim do componente Modal de Transações
 
+// Modal para editar transações
+class CustomModalUpdateTransaction extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalEditTransaction" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalTransactionLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalEditTransactionLabel">Editar Transação</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="transactionType" class="form-label text-dark">
+                                        Tipo de Transação
+                                    </label>
+                                    <select class="form-select bgc-secondary text-dark" id="transactionType" required>
+                                        <option value="income">Receita</option>
+                                        <option value="expense">Despesa</option>
+                                    </select>
+                                    <label for="amount" class="form-label mt-3 text-dark">
+                                        Valor (R$)
+                                    </label>
+                                    <input type="number" class="form-control bgc-secondary text-dark" id="amount" required />
+                                    <label for="date" class="form-label mt-3 text-dark">
+                                        Data
+                                    </label>
+                                    <input type="date" class="form-control bgc-secondary text-dark" id="date" required />
+                                    <label for="description" class="form-label mt-3 text-dark">
+                                        Descrição
+                                    </label>
+                                    <textarea class="form-control bgc-secondary text-dark" id="description" rows="3" required></textarea>
+                                    <label for="category" class="form-label mt-3 text-dark">
+                                        Categoria
+                                    </label>
+                                    <select class="form-select bgc-secondary text-dark" id="category" required>
+                                        <option value="food">Alimentação</option>
+                                        <option value="transportation">Transporte</option>
+                                        <option value="entertainment">Entretenimento</option>
+                                        <option value="utilities">Contas</option>
+                                        <option value="others">Outros</option>
+                                    </select>
+                                    <select class="form-select bgc-secondary text-dark" id="income_category" style="display: none;" required>
+                                        <option value="salary">Salário</option>
+                                        <option value="investments">Investimentos</option>
+                                        <option value="freelance">Freelance</option>
+                                        <option value="gifts">Doações</option>
+                                        <option value="others">Outros</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Transação Alterada')">Salvar Alterações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+    }
+}
+// Fim do Modal para editar transações
+
+// Modal para deletar transações
+class CustomModalDeleteTransaction extends HTMLElement {
+    constructor() {
+        super();
+        this.innerHTML = `
+            <div class="modal fade" id="modalDeleteTransaction" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNewGoalLabel" aria-hidden="true" >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content bgc-primary fw-bold">
+                        <div class="modal-header">
+                            <h5 class="modal-title fcc-primary" id="modalDeleteTransactionLabel">Excluir Transação</h5>
+                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                                aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body text-start bgc-secondary">
+                            <p class="text-dark fs-5">Tem certeza que deseja excluir esta transação?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('Transação Excluída')">
+                                Excluir Transação
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+    }
+}
+// Fim do Modal para deletar transações
+
 // Componente Modal de Nova Meta
 class CustomModalNewGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="modal fade" id="modalNewGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNewGoalLabel" aria-hidden="true">
+            < div class="modal fade" id = "modalNewGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalNewGoalLabel" aria - hidden="true" >
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -366,7 +463,7 @@ class CustomModalNewGoal extends HTMLElement {
                                 <div class="mb-3">
                                     <label for="goalTitle" class="form-label text-dark">
                                         Título da Meta
-                                    </label>    
+                                    </label>
                                     <input type="text" class="form-control bgc-secondary text-dark" id="goalTitle" required />
 
                                     <label for="goalValue" class="form-label mt-3 text-dark">
@@ -393,8 +490,8 @@ class CustomModalNewGoal extends HTMLElement {
                         </div>
                     </div>
                 </div>
-            </div>
-        `;
+            </div >
+            `;
     }
 }
 // Fim do componente Modal de Nova Meta
@@ -404,7 +501,7 @@ class CustomModalUpdateGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="modal fade" id="modalUpdateGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalUpdateGoalLabel" aria-hidden="true">
+            < div class="modal fade" id = "modalUpdateGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalUpdateGoalLabel" aria - hidden="true" >
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -417,7 +514,7 @@ class CustomModalUpdateGoal extends HTMLElement {
                                 <div class="mb-3">
                                     <label for="goalTitle" class="form-label text-dark">
                                         Título da Meta
-                                    </label>    
+                                    </label>
                                     <input type="text" class="form-control bgc-secondary text-dark" id="goalTitle" value="Meta" required />
 
                                     <label for="goalValue" class="form-label mt-3 text-dark">
@@ -444,8 +541,8 @@ class CustomModalUpdateGoal extends HTMLElement {
                         </div>
                     </div>
                 </div>
-            </div>
-        `;
+            </div >
+            `;
     }
 }
 // Fim do componente Modal de Editar Meta
@@ -455,7 +552,7 @@ class CustomModalDeleteGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="modal fade" id="modalDeleteGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDeleteGoalLabel" aria-hidden="true">
+            < div class="modal fade" id = "modalDeleteGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalDeleteGoalLabel" aria - hidden="true" >
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -472,8 +569,8 @@ class CustomModalDeleteGoal extends HTMLElement {
                         </div>
                     </div>
                 </div>
-            </div>
-        `;
+            </div >
+            `;
     }
 }
 // Fim do componente Modal de Apagar Meta
@@ -483,53 +580,53 @@ class CustomModalDescribeGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="modal fade" id="modalGoalInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="modalGoalInfoLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content bgc-primary fw-bold">
-                        <div class="modal-header">
-                            <h5 class="modal-title fcc-primary" id="modalGoalInfoLabel">Descrição da Meta</h5>
-                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-start bgc-secondary">   
-                            <div class="mb-3 d-flex flex-column">
-                                <label for="goalTitle" class="form-label text-dark">
-                                    Título da Meta
-                                </label>
-                                <p class="form-control bgc-secondary text-dark" id="goalTitle">
-                                    Meta Genérica
-                                </p>
+            < div class="modal fade" id = "modalGoalInfo" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1"
+        aria - labelledby="modalGoalInfoLabel" aria - hidden="true" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bgc-primary fw-bold">
+                    <div class="modal-header">
+                        <h5 class="modal-title fcc-primary" id="modalGoalInfoLabel">Descrição da Meta</h5>
+                        <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start bgc-secondary">
+                        <div class="mb-3 d-flex flex-column">
+                            <label for="goalTitle" class="form-label text-dark">
+                                Título da Meta
+                            </label>
+                            <p class="form-control bgc-secondary text-dark" id="goalTitle">
+                                Meta Genérica
+                            </p>
 
-                                <label for="goalValue" class="form-label mt-3 text-dark">
-                                    Valor (R$)
-                                </label>
-                                <p class="form-control bgc-secondary text-dark" id="goalValue">
-                                    R$ 100.000,00
-                                </p>
+                            <label for="goalValue" class="form-label mt-3 text-dark">
+                                Valor (R$)
+                            </label>
+                            <p class="form-control bgc-secondary text-dark" id="goalValue">
+                                R$ 100.000,00
+                            </p>
 
-                                <label for="goalDescription" class="form-label mt-3 text-dark">
-                                    Descrição
-                                </label>
-                                <p class="form-control bgc-secondary text-dark" id="goalDescription" rows="3">
-                                    Simples descrição da meta.
-                                </p>
+                            <label for="goalDescription" class="form-label mt-3 text-dark">
+                                Descrição
+                            </label>
+                            <p class="form-control bgc-secondary text-dark" id="goalDescription" rows="3">
+                                Simples descrição da meta.
+                            </p>
 
-                                <label for="goalExpirationDate" class="form-label mt-3 text-dark">
-                                    Data Limite
-                                </label>
-                                <p class="form-control bgc-secondary text-dark" id="goalExpirationDate">
-                                    10/03/2034
-                                </p>
-                            </div>
+                            <label for="goalExpirationDate" class="form-label mt-3 text-dark">
+                                Data Limite
+                            </label>
+                            <p class="form-control bgc-secondary text-dark" id="goalExpirationDate">
+                                10/03/2034
+                            </p>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
-        `;
+            </div >
+            `;
     }
 }
 // Fim do componente Modal de Descrever Meta
@@ -539,62 +636,62 @@ class CustomModalSelectTransactionsForPrinting extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="modal fade" id="modalSelectTransactions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="modalSelectTransactionsLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content bgc-primary fw-bold">
-                        <div class="modal-header">
-                            <h5 class="modal-title fcc-primary" id="modalSelectTransactionsLabel">Imprimir Relatório</h5>
-                            <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-start bgc-secondary">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Valor</th>
-                                        <th scope="col">Data</th>
-                                        <th scope="col">Descrição</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="fw-normal">
-                                    <tr>
-                                        <td><input type="checkbox" checked="true"></td>
-                                        <td>+ 90,00</td>
-                                        <td>10/10/2025</td>
-                                        <td>Recebeu Salário</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" checked="true"></td>
-                                        <td>+ 150,00</td>
-                                        <td>10/10/2025</td>
-                                        <td>recebeu mesada</td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" checked="true"></td>
-                                        <td>- 12,00</td>
-                                        <td>10/10/2025</td>
-                                        <td>Comprou pão</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            < div class="modal fade" id = "modalSelectTransactions" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1"
+        aria - labelledby="modalSelectTransactionsLabel" aria - hidden="true" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bgc-primary fw-bold">
+                    <div class="modal-header">
+                        <h5 class="modal-title fcc-primary" id="modalSelectTransactionsLabel">Imprimir Relatório</h5>
+                        <button type="button" class="btn-close bgc-secondary" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start bgc-secondary">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody class="fw-normal">
+                                <tr>
+                                    <td><input type="checkbox" checked="true"></td>
+                                    <td>+ 90,00</td>
+                                    <td>10/10/2025</td>
+                                    <td>Recebeu Salário</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked="true"></td>
+                                    <td>+ 150,00</td>
+                                    <td>10/10/2025</td>
+                                    <td>recebeu mesada</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked="true"></td>
+                                    <td>- 12,00</td>
+                                    <td>10/10/2025</td>
+                                    <td>Comprou pão</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            <label class="form-label">Formato: </label>
-                            <select class="form-select">
-                                <option value="csv">CSV</option>
-                                <option value="json">JSON</option>
-                                <option value="txt">TXT</option>
-                            </select>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary">Imprimir</button>
-                        </div>
+                        <label class="form-label">Formato: </label>
+                        <select class="form-select">
+                            <option value="csv">CSV</option>
+                            <option value="json">JSON</option>
+                            <option value="txt">TXT</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Imprimir</button>
                     </div>
                 </div>
             </div>
-        `
+            </div >
+            `;
     }
 }
 // Fim do componente Modal de Selecionar Transações para impressão
@@ -606,6 +703,8 @@ customElements.define('custom-menu', CustomMenu);
 customElements.define('custom-profile', CustomProfile);
 customElements.define('custom-modal-update-profile', CustomModalUpdateProfile);
 customElements.define('custom-modal-transaction', CustomModalTransaction);  
+customElements.define('custom-modal-update-transaction', CustomModalUpdateTransaction);
+customElements.define('custom-modal-delete-transaction', CustomModalDeleteTransaction);
 customElements.define('custom-modal-new-goal', CustomModalNewGoal);  
 customElements.define('custom-modal-update-goal', CustomModalUpdateGoal);
 customElements.define('custom-modal-delete-goal', CustomModalDeleteGoal);
