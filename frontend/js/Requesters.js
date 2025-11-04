@@ -117,9 +117,9 @@ class GoalRequester {
             method: "DELETE"
         };
 
-        let data = fetch(API_URL + END_POINTS.goals, options)
+        let data = fetch(API_URL + END_POINTS.goals + `/${id}`, options)
             .then(response => {
-                if (!result.ok) {
+                if (!response.ok) {
                     throw new Error("Requisição mal sucessida");
                 }
                 return true;
