@@ -9,31 +9,31 @@ class UserRequester {
         let data = fetch(API_URL + END_POINTS.user)
             .then(result => {
                 if (!result.ok) {
-                    throw new Error("Requisição mal sucessida");
+                    throw new Error("Requisição mal sucedida");
                 }
                 return result.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
             });
-        
+
         return data;
     }
-    
+
     // Método para atualiza dados
     static setData(data) {
         const options = {
-                method: "PUT",
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         };
 
-        let data = fetch(API_URL + END_POINTS.user, options) 
+        let data = fetch(API_URL + END_POINTS.user, options)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error("Requisição mal sucessida");
+                    throw new Error("Requisição mal sucedida");
                 }
                 return true;
             })
@@ -82,17 +82,17 @@ class GoalRequester {
     // Método para criar uma nova meta
     static save(data) {
         const options = {
-                method: "POST",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         };
 
-        let data = fetch(API_URL + END_POINTS.goals, options) 
+        let data = fetch(API_URL + END_POINTS.goals, options)
             .then(response => {
                 if (!result.ok) {
-                    throw new Error("Requisição mal sucessida");
+                    throw new Error("Requisição mal sucedida");
                 }
                 return response.json();
             })
@@ -120,7 +120,7 @@ class GoalRequester {
         let data = fetch(API_URL + END_POINTS.goals + `/${id}`, options)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error("Requisição mal sucessida");
+                    throw new Error("Requisição mal sucedida");
                 }
                 return true;
             })
@@ -134,7 +134,7 @@ class GoalRequester {
 
 // Classe para realizar requisições para Transaction
 class TransactionRequester {
-   
+
     // Método para listar transações
     static findAll() {
         let data = fetch(API_URL + END_POINTS.transactions)
@@ -168,17 +168,17 @@ class TransactionRequester {
     // Método para salvar transação
     static save(data) {
         const options = {
-                method: "POST",
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         };
 
-        let data = fetch(API_URL + END_POINTS.goals, options) 
+        let data = fetch(API_URL + END_POINTS.goals, options)
             .then(response => {
                 if (!result.ok) {
-                    throw new Error("Requisição mal sucessida");
+                    throw new Error("Requisição mal sucedida");
                 }
                 return response.json();
             })
@@ -199,7 +199,23 @@ class TransactionRequester {
 
     // Método para apgar transação    
     static delete(id) {
-        // Apagar registro
+        const options = {
+            method: "DELETE"
+        };
+
+        let data = fetch(API_URL + END_POINTS.transactions + `/${id}`, options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro:", error.message);
+                return false;
+            });
+
+        return data;
     }
 
 }
