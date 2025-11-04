@@ -450,7 +450,7 @@ class CustomModalNewGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            < div class="modal fade" id = "modalNewGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalNewGoalLabel" aria - hidden="true" >
+            <div class="modal fade" id="modalNewGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalNewGoalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -501,7 +501,7 @@ class CustomModalUpdateGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            < div class="modal fade" id = "modalUpdateGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalUpdateGoalLabel" aria - hidden="true" >
+            <div class="modal fade" id = "modalUpdateGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex = "-1" aria-labelledby="modalUpdateGoalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -552,7 +552,7 @@ class CustomModalDeleteGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            < div class="modal fade" id = "modalDeleteGoal" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1" aria - labelledby="modalDeleteGoalLabel" aria - hidden="true" >
+            <div class="modal fade" id="modalDeleteGoal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex = "-1" aria-labelledby="modalDeleteGoalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content bgc-primary fw-bold">
                         <div class="modal-header">
@@ -580,8 +580,8 @@ class CustomModalDescribeGoal extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            < div class="modal fade" id = "modalGoalInfo" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1"
-        aria - labelledby="modalGoalInfoLabel" aria - hidden="true" >
+            <div class="modal fade" id="modalGoalInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex = "-1"
+        aria-labelledby="modalGoalInfoLabel" aria-hidden="true" >
             <div class="modal-dialog modal-lg">
                 <div class="modal-content bgc-primary fw-bold">
                     <div class="modal-header">
@@ -636,8 +636,8 @@ class CustomModalSelectTransactionsForPrinting extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            < div class="modal fade" id = "modalSelectTransactions" data - bs - backdrop="static" data - bs - keyboard="false" tabindex = "-1"
-        aria - labelledby="modalSelectTransactionsLabel" aria - hidden="true" >
+            <div class="modal fade" id="modalSelectTransactions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex = "-1"
+        aria-labelledby="modalSelectTransactionsLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content bgc-primary fw-bold">
                     <div class="modal-header">
