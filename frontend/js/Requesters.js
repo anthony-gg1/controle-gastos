@@ -113,7 +113,21 @@ class GoalRequester {
 
     // Método para remover uma meta
     static delete(id) {
-        // Apagar registro
+        const options = {
+            method: "DELETE"
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals, options)
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+        return data;
     }
 
 }
