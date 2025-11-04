@@ -23,7 +23,7 @@ class UserRequester {
     // Método para atualiza dados
     static setData(data) {
         const options = {
-                method: "POST",
+                method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
