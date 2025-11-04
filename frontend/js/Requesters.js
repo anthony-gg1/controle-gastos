@@ -22,7 +22,26 @@ class UserRequester {
     
     // Método para atualiza dados
     static setData(data) {
-        // Puxar definir dados
+        const options = {
+                method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.user, options) 
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+
+        return data;
     }
 
 }
