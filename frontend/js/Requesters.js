@@ -108,7 +108,25 @@ class GoalRequester {
 
     // Método para editar uma meta
     static update(data) {
-        // Atualizar registro
+        const options = {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals + `/${id}`, options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+        return data;
     }
 
     // Método para remover uma meta
@@ -194,7 +212,25 @@ class TransactionRequester {
 
     // Método para editar transação
     static update(data) {
-        // Atualizar registro
+        const options = {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.transactions + `/${id}`, options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+        return data;
     }
 
     // Método para apgar transação    
