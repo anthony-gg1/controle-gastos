@@ -4,25 +4,28 @@ config:
 ---
 erDiagram
     Transaction {
-        id INT
-        value DECIMAL
-        description VARCHAR
-        category VARCHAR
-        date_registered DATE
+        int id "PRIMARY KEY"
+        string type "ENUM('EXPENSES','REVENUE')"
+        float value "DECIMAL(10,2)"
+        date date "DATE"
+        string category_expenses "ENUM('salary','investments','freelance','gifts','others')"
+        string category_revenue "ENUM('food','transportation','entertainment','utilities','others')"
+        string description "TEXT"
+        int user_id "FOREIGN KEY -> User.id"
     }
+
     User {
-        id INT
-        name VARCHAR
-        email VARCHAR
-        pix_key VARCHAR
+        int id "PRIMARY KEY"
+        string key "VARCHAR(100)"
+        string value "TEXT"
     }
+
     Goal {
-        id INT
-        description VARCHAR
-        start_date DATE
-        end_date DATE
-        value DECIMAL
-        actual_value DECIMAL
-        in_progress BOOLEAN
-        priority VARCHAR
+        int id "PRIMARY KEY"
+        string title "VARCHAR(255)"
+        float value "DECIMAL(10,2)"
+        string description "TEXT"
+        date end_date "DATE"
+        string status "ENUM('IN_PROGRESS','CANCELED','FINISHED','LOST')"
+        int user_id "FOREIGN KEY -> User.id"
     }
