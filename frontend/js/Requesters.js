@@ -132,7 +132,7 @@ class GoalRequester {
 
 }
 
-// TransacClasse para realizar requisições para tion
+// Classe para realizar requisições para Transaction
 class TransactionRequester {
    
     // Método para listar transações
