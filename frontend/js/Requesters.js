@@ -123,6 +123,7 @@ class TransactionRequester {
     // Método para apgar transação    
     static delete(id) {
         // Apagar registro
+        
     }
 
 }

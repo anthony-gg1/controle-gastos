@@ -433,7 +433,7 @@ class CustomModalDeleteTransaction extends HTMLElement {
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn fcc-negative" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary" onclick="alert('Transação Excluída')">
+                            <button type="button" class="btn btn-primary" id="confirmDeleteTransaction" onclick="">
                                 Excluir Transação
                             </button>
                         </div>
