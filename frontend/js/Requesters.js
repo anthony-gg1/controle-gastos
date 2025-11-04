@@ -22,7 +22,26 @@ class UserRequester {
     
     // Método para atualiza dados
     static setData(data) {
-        // Puxar definir dados
+        const options = {
+                method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.user, options) 
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+
+        return data;
     }
 
 }
@@ -62,7 +81,29 @@ class GoalRequester {
 
     // Método para criar uma nova meta
     static save(data) {
-        // Salvar registro
+        const options = {
+                method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals, options) 
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return response.json();
+            })
+            .then(data => {
+                return data.lastId;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+
+        return data;
     }
 
     // Método para editar uma meta
@@ -72,7 +113,21 @@ class GoalRequester {
 
     // Método para remover uma meta
     static delete(id) {
-        // Apagar registro
+        const options = {
+            method: "DELETE"
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals, options)
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+        return data;
     }
 
 }
@@ -112,7 +167,29 @@ class TransactionRequester {
 
     // Método para salvar transação
     static save(data) {
-        // Salvar registro
+        const options = {
+                method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals, options) 
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return response.json();
+            })
+            .then(data => {
+                return data.lastId;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+
+        return data;
     }
 
     // Método para editar transação
