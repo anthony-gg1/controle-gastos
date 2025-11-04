@@ -6,24 +6,23 @@ config:
 classDiagram
     class Transaction {
         + id
+        + type
         + value
-        + description
+        + date
         + category
-        + date_registered
+        + description
     }
     class User {
-        + id
         + name
         + email
-        + pix_key
+        + phone
+        + cpf
     }
     class Goal {
         + id
-        + description
-        + start_date
-        + end_date
+        + title
         + value
-        + actual_value
-        + in_progress
-        + priority
+        + description
+        + end_date
+        + status
     }
