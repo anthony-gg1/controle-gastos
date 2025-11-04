@@ -7,11 +7,11 @@ class UserRequester {
     // Método para requisitar os dados
     static getData() {
         let data = fetch(API_URL + END_POINTS.user)
-            .then(result => {
-                if (!result.ok) {
+            .then(response => {
+                if (!response.ok) {
                     throw new Error("Requisição mal sucedida");
                 }
-                return result.json();
+                return response.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -52,11 +52,11 @@ class GoalRequester {
     // Método para listar metas
     static findAll() {
         let data = fetch(API_URL + END_POINTS.goals)
-            .then(result => {
-                if (!result.ok) {
-                    throw new Error("Erro em listar metas");
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
                 }
-                return result.json();
+                return response.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -67,11 +67,11 @@ class GoalRequester {
     // Método para buscar uma meta específica 
     static findById(id) {
         let data = fetch(API_URL + END_POINTS.goals + `/${id}`)
-            .then(result => {
-                if (!result.ok) {
-                    throw new Error("Erro em buscar uma meta")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
                 }
-                return result.json();
+                return response.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -91,7 +91,7 @@ class GoalRequester {
 
         let data = fetch(API_URL + END_POINTS.goals, options)
             .then(response => {
-                if (!result.ok) {
+                if (!response.ok) {
                     throw new Error("Requisição mal sucedida");
                 }
                 return response.json();
@@ -138,11 +138,11 @@ class TransactionRequester {
     // Método para listar transações
     static findAll() {
         let data = fetch(API_URL + END_POINTS.transactions)
-            .then(result => {
-                if (!result.ok) {
-                    throw new Error("Falha em listar transações");
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
                 }
-                return result.json();
+                return response.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -153,11 +153,11 @@ class TransactionRequester {
     // Método para bustar uma transação específica
     static findById(id) {
         data = fetch(API_URL + END_POINTS.transactions + `/${id}`)
-            .then(result => {
-                if (!result.ok) {
-                    throw new Error("Ocorreu um erro ao buscar uma transação")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Requisição mal sucedida");
                 }
-                return result.json();
+                return response.json();
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -177,7 +177,7 @@ class TransactionRequester {
 
         let data = fetch(API_URL + END_POINTS.goals, options)
             .then(response => {
-                if (!result.ok) {
+                if (!response.ok) {
                     throw new Error("Requisição mal sucedida");
                 }
                 return response.json();
