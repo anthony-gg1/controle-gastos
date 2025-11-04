@@ -150,7 +150,26 @@ class TransactionRequester {
 
     // Método para salvar transação
     static save(data) {
-        // Salvar registro
+        const options = {
+                method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        };
+
+        let data = fetch(API_URL + END_POINTS.goals, options) 
+            .then(response => {
+                if (!result.ok) {
+                    throw new Error("Requisição mal sucessida");
+                }
+                return true;
+            })
+            .catch(error => {
+                console.error("Erro: ", error.message);
+            });
+
+        return data;
     }
 
     // Método para editar transação
