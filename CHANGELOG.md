@@ -9,18 +9,6 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 
 ## [Unreleased]
 
-### Em Desenvolvimento
-- Criação de Receitas e Despesas
-- Categorização de Transações
-- Geração de Relatório em Gráficos
-- Atualizar e apagar transações
-- Atualizar e apagar metas
-- Mudar perfil de usuário
-- Cadastrar receitas e despesas
-- Mudanças Mínimas nas páginas `profile.html`, `goals.html` e `issue-reports.html`
-
----
-
 ## [0.1.0] - 2025-10-24
 
 ### Adições
@@ -75,6 +63,19 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 ### Em desenvolvimento
 - Modal para editar transação
 - Modal para excluir transação
+- Funções para alterar dados no banco de dados
+- Ajustar logo do projeto
+- Renderização de dados
+
+---
+
+## [0.4.0] - 2025-11-02
+
+### Adições
+- Modal para editar transação
+- Modal para excluir transação
+
+## Em desenvolvimento
 - Funções para alterar dados no banco de dados
 - Ajustar logo do projeto
 - Renderização de dados
