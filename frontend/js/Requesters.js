@@ -32,7 +32,7 @@ class UserRequester {
 
         let data = fetch(API_URL + END_POINTS.user, options) 
             .then(response => {
-                if (!result.ok) {
+                if (!response.ok) {
                     throw new Error("Requisição mal sucessida");
                 }
                 return true;
@@ -94,7 +94,10 @@ class GoalRequester {
                 if (!result.ok) {
                     throw new Error("Requisição mal sucessida");
                 }
-                return true;
+                return response.json();
+            })
+            .then(data => {
+                return data.lastId;
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
@@ -163,7 +166,10 @@ class TransactionRequester {
                 if (!result.ok) {
                     throw new Error("Requisição mal sucessida");
                 }
-                return true;
+                return response.json();
+            })
+            .then(data => {
+                return data.lastId;
             })
             .catch(error => {
                 console.error("Erro: ", error.message);
