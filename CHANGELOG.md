@@ -79,3 +79,24 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
 - Funções para alterar dados no banco de dados
 - Ajustar logo do projeto
 - Renderização de dados
+
+---
+
+## [0.5.0] - 2025-11-03
+
+### Adições
+- Função para salvar meta
+- Função para atualizar meta
+- Função para excluir meta
+- Função para salvar transação
+- Função para atualizar transação
+- Função para excluir transação
+- Função para atualizar dados do usuários
+
+### Correções
+- PNG da logo alterada
+- Diagramas Corrigidos
+
+### Em desenvolvimento
+- Renderização de Dados
+- Scripts para cada página
