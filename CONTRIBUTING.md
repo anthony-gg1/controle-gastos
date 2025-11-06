@@ -83,15 +83,49 @@ Você pode contribuir de diversas formas:
 
 ---
 
-### Prefixos Comuns
+## Padrão de Commits
 
-- **feat:** nova funcionalidade  
-- **fix:** correção de bug  
-- **docs:** atualização de documentação  
-- **style:** ajustes visuais ou de formatação  
-- **refactor:** refatoração sem mudança de comportamento  
-- **test:** adição ou melhoria de testes  
-- **chore:** mudanças em tarefas e dependências  
+Este projeto adota o padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) para manter consistência e facilitar o versionamento e geração de changelogs.
+
+### Estrutura
+
+Cada mensagem de commit deve seguir o formato:
+
+<tipo>[escopo opcional]: <descrição breve>
+  
+Exemplo:
+
+feat: adiciona suporte ao modo escuro
+fix(profile): corrige erro de renderização
+
+
+### Tipos permitidos
+
+| Tipo       | Descrição                                                                 |
+|------------|---------------------------------------------------------------------------|
+| `feat`     | Adição de nova funcionalidade                                             |
+| `fix`      | Correção de bugs                                                          |
+| `docs`     | Alterações na documentação                                                |
+| `style`    | Mudanças de formatação, sem impacto no código (espaços, ponto e vírgula) |
+| `refactor` | Refatoração de código, sem alteração de funcionalidade                   |
+| `perf`     | Melhorias de desempenho                                                   |
+| `test`     | Adição ou modificação de testes                                           |
+| `chore`    | Tarefas auxiliares (atualizações de dependências, configs, etc.)         |
+| `build`    | Mudanças que afetam o processo de build ou dependências externas         |
+| `ci`       | Alterações em configurações de integração contínua                       |
+
+### Mudanças quebradoras
+
+Para indicar uma **breaking change**, use o sufixo `!` no tipo ou adicione `BREAKING CHANGE:` no corpo do commit.
+
+Exemplo:
+
+feat!: remove suporte ao internet explorer 11
+BREAKING CHANGE: o projeto não é mais compatível com IE11
+
+---
+
+A partir da versão `0.5.0`, todos os commits devem seguir este padrão. Commits fora do padrão poderão ser rejeitados em revisões ou automações futuras.
 
 ---
 
