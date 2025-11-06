@@ -33,7 +33,7 @@ controle-gastos/
 1. Clone:
 ```powershell
 git clone https://github.com/seu-usuario/controle-gastos.git
-cd "C:\Users\Familia\Desktop\controle-gastos"
+cd "C:\Users\usuario\Desktop\controle-gastos"
 ```
 
 2. Backend:
