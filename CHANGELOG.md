@@ -1,102 +1,103 @@
 # CHANGELOG
 
-Todas as mudanças importantes neste projeto serão documentadas aqui.
-
-O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/)  
-Este projeto segue [SemVer](https://semver.org/lang/pt-BR/).
+Todas as mudanças importantes neste projeto serão documentadas aqui.  
+Este projeto segue [SemVer](https://semver.org/lang/pt-BR/) e o formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 
 ---
 
 ## [Unreleased]
 
-## [0.1.0] - 2025-10-24
-
-### Adições
-- Todas as Páginas feitas
-- Página `help.html` criada
-- Criação de uma API falsa para testes
-- Integração de Bootstrap as Páginas
-- Criação de arquivos JavaScript
-- Arquivos `README.md`, `SECURITY.md`, `LICENSE.md` e `CHANGELOG.md` adicionados
-
-### Correções
-- Menu lateral na página `issue-reports`
-- `README.md` Atualizado
-- Mudança de cores em `about-us.html`
-
----
-
-## [0.2.0] - 2025-10-27
-
-### Adições
-- Criação de modais para manipular as metas
-
-### Correções
-- Página `about-project.html` modificada para o padrão das outras páginas
-- Rodapé modificado
-- Página `history.html` modificada para o padrão de outras tabelas
-- Logo do projeto refatorada
-
-### Em desenvolvimento
-- Modal para emissão de relatórios
-- Modal para editar transação
-- Modal para excluir transação
-- Modal para editar dados do perfil do usuário
-
----
-
-## [0.3.0] - 2025-11-01
-
-### Adições
-- Função para gerar gráficos adicionada
-- Funções para fazer requisições à API
-- Funções de Validação adicionados
-- Modal para emissão de relatórios
-- Modal de editar perfil adicionado
-- Página de relatórios adicionada
-
-### Correções
-- Página `profile.html` modificada para um offcanvas
-- Biblioteca Chart.js removida das pastas do projeto
-- Footer modificado
-
-### Em desenvolvimento
-- Modal para editar transação
-- Modal para excluir transação
-- Funções para alterar dados no banco de dados
-- Ajustar logo do projeto
+### Pending
 - Renderização de dados
-
----
-
-## [0.4.0] - 2025-11-02
-
-### Adições
-- Modal para editar transação
-- Modal para excluir transação
-
-## Em desenvolvimento
-- Funções para alterar dados no banco de dados
-- Ajustar logo do projeto
-- Renderização de dados
+- Scripts específicos para cada página
 
 ---
 
 ## [0.5.0] - 2025-11-03
 
-### Adições
-- Função para salvar meta
-- Função para atualizar meta
-- Função para excluir meta
-- Função para salvar transação
-- Função para atualizar transação
-- Função para excluir transação
-- Função para atualizar dados do usuários
+### Added
+- Funções para metas:
+  - Salvar, atualizar, excluir
+- Funções para transações:
+  - Salvar, atualizar, excluir
+- Função para atualizar dados do usuário
 
-### Correções
-- PNG da logo alterada
-- Diagramas Corrigidos
+### Fixed
+- Logo em PNG atualizada
+- Diagramas corrigidos
 
-### Em desenvolvimento
-- Renderização de Dados
-- Scripts para cada página
+---
+
+## [0.4.0] - 2025-11-02
+
+### Added
+- Modal para editar transação
+- Modal para excluir transação
+
+### Pending
+- Funções para alterar dados no banco de dados
+- Ajuste da logo do projeto
+- Renderização de dados
+
+---
+
+## [0.3.0] - 2025-11-01
+
+### Added
+- Função para geração de gráficos
+- Funções para requisições à API
+- Funções de validação
+- Modal para emissão de relatórios
+- Modal para edição de perfil
+- Página de relatórios
+
+### Changed
+- Página `profile.html` convertida para offcanvas
+- Footer redesenhado
+
+### Fixed
+- Biblioteca Chart.js removida das pastas do projeto
+
+### Pending
+- Modal para editar transação
+- Modal para excluir transação
+- Funções para alterar dados no banco de dados
+- Ajuste da logo do projeto
+- Renderização de dados
+
+---
+
+## [0.2.0] - 2025-10-27
+
+### Added
+- Criação de modais para manipulação de metas
+
+### Changed
+- Página `about-project.html` ajustada para seguir o padrão das demais
+- Rodapé redesenhado
+- Página `history.html` ajustada para o padrão das tabelas
+- Logo do projeto refatorada
+
+### Pending
+- Modal para emissão de relatórios
+- Modal para edição de transação
+- Modal para exclusão de transação
+- Modal para edição de dados do perfil do usuário
+
+---
+
+## [0.1.0] - 2025-10-24
+
+### Added
+- Criação de todas as páginas principais
+- Página `help.html`
+- API falsa para testes
+- Integração do Bootstrap
+- Arquivos JavaScript iniciais
+- Arquivos auxiliares:
+  - `README.md`, `SECURITY.md`, `LICENSE.md`, `CHANGELOG.md`
+
+### Fixed
+- Menu lateral na página `issue-reports`
+- Atualização do `README.md`
+- Ajuste de cores em `about-us.html`
