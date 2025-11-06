@@ -91,11 +91,12 @@ Este projeto adota o padrão [Conventional Commits](https://www.conventionalcomm
 
 Cada mensagem de commit deve seguir o formato:
 
-<tipo>[escopo opcional]: <descrição breve>
+tipo[escopo opcional]: descrição breve
   
 Exemplo:
 
 feat: adiciona suporte ao modo escuro
+
 fix(profile): corrige erro de renderização
 
 
