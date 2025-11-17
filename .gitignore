@@ -1,0 +1,13 @@
+# Ambiente
+.env
+
+# IDEs
+.idea/
+.vscode/
+
+# Python
+venv/
+__pycache__/
+
+# Front-end
+node_modules/
