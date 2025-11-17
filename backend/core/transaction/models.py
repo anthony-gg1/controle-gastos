@@ -35,7 +35,6 @@ class Transaction(models.Model):
         max_digits=10,
         decimal_places=2,
         default=0.0,
-        min=0.0,
         null=False)
     
     type = models.CharField(
