@@ -107,13 +107,13 @@ fix(profile): corrige erro de renderização
 | `feat`     | Adição de nova funcionalidade                                             |
 | `fix`      | Correção de bugs                                                          |
 | `docs`     | Alterações na documentação                                                |
-| `style`    | Mudanças de formatação, sem impacto no código (espaços, ponto e vírgula) |
-| `refactor` | Refatoração de código, sem alteração de funcionalidade                   |
+| `style`    | Mudanças de formatação, sem impacto no código (espaços, ponto e vírgula)  |
+| `refactor` | Refatoração de código, sem alteração de funcionalidade                    |
 | `perf`     | Melhorias de desempenho                                                   |
 | `test`     | Adição ou modificação de testes                                           |
-| `chore`    | Tarefas auxiliares (atualizações de dependências, configs, etc.)         |
-| `build`    | Mudanças que afetam o processo de build ou dependências externas         |
-| `ci`       | Alterações em configurações de integração contínua                       |
+| `chore`    | Tarefas auxiliares (atualizações de dependências, configs, etc.)          |
+| `build`    | Mudanças que afetam o processo de build ou dependências externas          |
+| `ci`       | Alterações em configurações de integração contínua                        |
 
 ### Mudanças quebradoras
 
