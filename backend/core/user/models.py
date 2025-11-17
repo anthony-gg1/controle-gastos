@@ -29,4 +29,4 @@ class User(models.Model):
         null=False)
 
     class Meta:
-        db_name = 'tbUser'
+        db_table = 'tbUser'

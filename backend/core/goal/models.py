@@ -29,7 +29,6 @@ class Goal(models.Model):
         max_digits=10,
         decimal_places=2,
         default=0.0,
-        min=0.0,
         null=False)
     
     description = models.TextField(
@@ -48,4 +47,4 @@ class Goal(models.Model):
         null=False)
 
     class Meta:
-        db_name = 'tbGoal'
+        db_table = 'tbGoal'
