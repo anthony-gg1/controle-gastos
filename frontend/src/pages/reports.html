@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+
+<body class="">
+
+    <!-- Header -->
+    <custom-header></custom-header>
+    <!-- Fim do Header -->
+
+    <!-- Menu -->
+    <custom-menu></custom-menu>
+    <!-- Fim de Menu -->
+
+    <!-- Perfil -->
+    <custom-profile></custom-profile>
+    <!-- Fim de Perfil -->
+
+    <!-- Main -->
+    <main class="">
+        <!-- RECEITAS E DESPESAS -->
+        <section class="">
+            <div class="">
+                <canvas id="transactionsValuesComparision" width="400" height="400"></canvas>
+            </div>
+            <div class="">
+                <canvas id="transactionsBytrimester" width="400" height="400"></canvas>
+            </div>
+        </section>
+
+        <!-- CATEGORIAS DE GASTOS E DESPESAS -->
+        <section class="">
+            <div class="">
+                <canvas id="revenueCategories" width="400" height="400"></canvas>
+            </div>
+            <div class="">
+                <canvas id="expensesCategories" width="400" height="400"></canvas>
+            </div>
+        </section>
+    </main>
+    <!-- Fim do Main -->
+
+    <!-- Rodapé -->
+    <custom-footer></custom-footer>
+    <!-- Fim de rodapé -->
+</body>
+
+</html>
