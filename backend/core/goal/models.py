@@ -48,4 +48,4 @@ class Goal(models.Model):
         null=False)
 
     class Meta:
-        db_name = 'tbGoal'
+        db_table = 'tbGoal'

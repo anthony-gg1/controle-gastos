@@ -60,4 +60,4 @@ class Transaction(models.Model):
         null=False)
 
     class Meta:
-        db_name='tbTransaction'
+        db_table='tbTransaction'
