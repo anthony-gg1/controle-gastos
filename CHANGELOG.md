@@ -10,8 +10,22 @@ Este projeto segue [SemVer](https://semver.org/lang/pt-BR/) e o formato [Keep a 
 ### Pending
 - Renderização de dados
 - Scripts específicos para cada página
+- Páginas Front-end estilizadas com TailwindCSS:
+  - Homepage, about-us, about-project, help, history, reports, login, register
+- Configuração do Vue.js no Sistema
 
 ---
+
+## [0.6.0] - 2025-11-17
+
+### Added
+- TailwindCSS
+- Servidor Vite
+- Django Rest Framework para Back-end
+- Banco de Dados SQLite para guardar:
+  - Usuários, Metas, Transações
+- Pull Request Template
+- Dependabot para alertas e Revisão de vulnerabilidades
 
 ## [0.5.0] - 2025-11-03
 
