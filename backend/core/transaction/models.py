@@ -58,5 +58,8 @@ class Transaction(models.Model):
         choices=TransactionCategory.choices,
         null=False)
 
+    def __str__(self):
+        return f"{"+" if self.type == "REV" else "-"} {self.value} ({self.user.fullname})"
+
     class Meta:
         db_table='tbTransaction'
