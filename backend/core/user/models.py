@@ -10,6 +10,11 @@ class User(models.Model):
         max_length=255,
         null=False)
 
+    password = models.CharField(
+        db_column='user_password',
+        max_length=200,
+        null=False)
+
     email = models.EmailField(
         db_column='user_email',
         max_length=254,
