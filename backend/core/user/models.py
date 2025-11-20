@@ -28,5 +28,8 @@ class User(models.Model):
         unique=True,
         null=False)
 
+    def __str__(self):
+        return f"{self.id if not (self.id is None) else "XX"} - {self.fullname}"
+
     class Meta:
         db_table = 'tbUser'
