@@ -46,5 +46,8 @@ class Goal(models.Model):
         default=GoalStatus.IN_PROGRESS,
         null=False)
 
+    def __str__(self):
+        return f"{self.title} ({self.user.fullname})"
+
     class Meta:
         db_table = 'tbGoal'
