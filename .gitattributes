@@ -1,0 +1,31 @@
+# Fim de Linha
+* text=auto eol=lf
+
+# Binários
+
+# Imagens
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.gif binary
+*.svg binary
+
+# Binários
+*.pdf binary
+*.odf binary
+*.docx binary
+*.pptx binary
+*.draio binary
+*.sqlite3 binary
+
+# Textos
+*.html text
+*.css text
+*.js text
+*.sql text
+*.py text
+*.md text
+*.yml text
+*.xml text
+*.json text
