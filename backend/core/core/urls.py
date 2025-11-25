@@ -16,7 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from user.views import UserCreateView
+from goal.views import GoalListCreateView, GoalDetailView
+from transaction.views import TransactionListCreateView, TransactionDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # USER
+    path('api/users/register/', UserCreateView.as_view()),
+
+    # GOALS
+    path('api/goals/', GoalListCreateView.as_view()),
+    path('api/goals/<int:pk>/', GoalDetailView.as_view()),
+
+    # TRANSACTIONS
+    path('api/transactions/', TransactionListCreateView.as_view()),
+    path('api/transactions/<int:pk>/', TransactionDetailView.as_view()),
 ]
