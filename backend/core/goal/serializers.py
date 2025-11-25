@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backend.core.goal.models import Goal
+from .models import Goal
 
 class GoalSerializer(serializers.ModelSerializer):
     class Meta:

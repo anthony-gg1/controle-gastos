@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from user.views import UserCreateView
+from user.views import UserListCreateView, UserDetailView
 from goal.views import GoalListCreateView, GoalDetailView
 from transaction.views import TransactionListCreateView, TransactionDetailView
 
@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # USER
-    path('api/users/register/', UserCreateView.as_view()),
+    path('api/users/register/', UserListCreateView.as_view()),
 
     # GOALS
     path('api/goals/', GoalListCreateView.as_view()),

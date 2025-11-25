@@ -6,19 +6,9 @@ from .serializers import GoalSerializer
 
 # Create your views here.
 class GoalListCreateView(ListCreateAPIView):
+    queryset = Goal.objects.all()
     serializer_class = GoalSerializer
-    permission_classes = [IsAuthenticated]
-
-    def get_queryset(self):
-        return Goal.objects.filter(user=self.request.user)
-
-    def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
-
 
 class GoalDetailView(RetrieveUpdateDestroyAPIView):
+    queryset = Goal.objects.all()
     serializer_class = GoalSerializer
-    permission_classes = [IsAuthenticated]
-
-    def get_queryset(self):
-        return Goal.objects.filter(user=self.request.user)

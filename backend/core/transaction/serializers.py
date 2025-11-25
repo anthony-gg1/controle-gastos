@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backend.core.transaction.models import Transaction
+from .models import Transaction
 
 class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
