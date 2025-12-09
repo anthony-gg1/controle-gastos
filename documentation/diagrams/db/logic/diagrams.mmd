@@ -4,28 +4,32 @@ config:
 ---
 erDiagram
     Transaction {
-        int id "PRIMARY KEY"
-        string type "ENUM('EXPENSES','REVENUE')"
-        float value "DECIMAL(10,2)"
-        date date "DATE"
-        string category_expenses "ENUM('salary','investments','freelance','gifts','others')"
-        string category_revenue "ENUM('food','transportation','entertainment','utilities','others')"
-        string description "TEXT"
-        int user_id "FOREIGN KEY -> User.id"
+        int transaction_id_pk "PRIMARY KEY"
+        string transaction_user_id_fk "VARCHAR(100)"
+        float transaction_value "DECIMAL(10,2)"
+        string transaction_type "ENUM('EXPENSES','REVENUE')"
+        date transaction_date "DATE"
+        string transaction_description "TEXT"
+        string transaction_category "ENUM('salary','investments','freelance','gifts','food','transportation','entertainment','utilities','others')"
+        int user_id "FOREIGN KEY -> User.user_id_pk"
     }
 
     User {
-        int id "PRIMARY KEY"
-        string key "VARCHAR(100)"
-        string value "TEXT"
+        int user_id_pk "PRIMARY KEY"
+        string user_fullname "VARCHAR(100)"
+        string user_password "TEXT"
+        string user_email "VARCHAR(254)"
+        string user_cpf "VARCHAR(100)"
+        string user_tel "VARCHAR(100)"
     }
 
     Goal {
-        int id "PRIMARY KEY"
-        string title "VARCHAR(255)"
-        float value "DECIMAL(10,2)"
-        string description "TEXT"
-        date end_date "DATE"
-        string status "ENUM('IN_PROGRESS','CANCELED','FINISHED','LOST')"
-        int user_id "FOREIGN KEY -> User.id"
+        int goal_id "PRIMARY KEY"
+        string goal_user_id_fk "VARCHAR(100)"
+        string goal_title "VARCHAR(255)"
+        float goal_value "DECIMAL(10,2)"
+        string goal_description "TEXT"
+        date goal_end_date "DATE"
+        string goal_status "ENUM('IN_PROGRESS','CANCELED','FINISHED','LOST')"
+        int user_id "FOREIGN KEY -> User.user_id_pk"
     }
