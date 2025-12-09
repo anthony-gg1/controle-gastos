@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Controle de Gastos</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+</head>
+
+<body class="min-vh-100 d-flex flex-column min-w-100">
+
+    <!-- Header -->
+    <custom-header></custom-header>
+    <!-- Fim de Header -->
+
+    <!-- Menu -->
+    <custom-menu></custom-menu>
+    <!-- Fim de Menu -->
+
+    <!-- Perfil -->
+    <custom-profile></custom-profile>
+    <!-- Fim de Perfil -->
+
+    <!-- Modal de Editar transações -->
+    <custom-modal-update-transaction></custom-modal-update-transaction>
+    <!-- Fim do modal de Editar transações -->
+
+    <!-- Modal para deletar transações -->
+    <custom-modal-delete-transaction></custom-modal-delete-transaction>
+    <!-- Fim do Modal para deletar transações -->
+
+    <!-- Main -->
+    <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
+        <!-- Sessão: Tabela -->
+        <section class="d-flex flex-column container px-0 py-2 justify-content-center m-3">
+            <div class="bgc-primary rounded-top py-1"></div>
+            <table class="custom-table bgc-primary my-0 rounded">
+                <thead>
+                    <tr class="border-bottom">
+                        <th scope="col" colspan="4">
+                            <h3 class="fw-bold fcc-primary">Histórico</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fcc-positive">R$ 90.00</td>
+                        <td>10/10/2025</td>
+                        <td>Recebeu Salário</td>
+                        <td>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
+                                <i class="bi bi-pencil-square fcc-positive fs-4"></i>
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
+                                <i class="bi bi-trash3 fcc-negative fs-4"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fcc-positive">R$ 150.00</td>
+                        <td>10/10/2025</td>
+                        <td>recebeu mesada</td>
+                        <td>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
+                                <i class="bi bi-pencil-square fcc-positive fs-4"></i>
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
+                                <i class="bi bi-trash3 fcc-negative fs-4"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fcc-negative">R$ 12.00</td>
+                        <td>10/10/2025</td>
+                        <td>Comprou pão</td>
+                        <td>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalEditTransaction">
+                                <i class="bi bi-pencil-square fcc-positive fs-4"></i>
+                            </button>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#modalDeleteTransaction">
+                                <i class="bi bi-trash3 fcc-negative fs-4"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-center bgc-primary rounded-bottom">
+                <a href="#" class="link fcc-primary my-1" data-bs-toggle="modal"
+                    data-bs-target="#modalSelectTransactions">Emitir Relatório</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fim de Main -->
+
+    <!-- Rodapé -->
+    <custom-footer></custom-footer>
+    <!-- Fim de rodapé -->
+
+    <!-- Modal de selação de transações para impressão -->
+    <custom-modal-transaction-printing />
+    <!-- Fim do modal de selação de transações para impressão -->
+
+    <script src="/js/Components.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

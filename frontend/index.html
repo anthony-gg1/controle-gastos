@@ -5,11 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Controle de Gastos</title>
-    <link href="/src/index.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
 </head>
 
-<body class="">
+<body class="min-vh-100 d-flex flex-column min-w-100">
 
     <!-- Header -->
     <custom-header></custom-header>
@@ -24,35 +27,35 @@
     <!-- Fim de Perfil -->
 
     <!-- Main -->
-    <main class="">
+    <main class="bgc-secondary text-center py-5 px-3 flex-wrap flex-grow-1 d-flex justify-content-around">
         <!-- Sessão: Dados Bancários -->
-        <section class="">
-            <div class="">
-                <h2 class="">Saldo</h2>
-                <div class="">R$ 640,00</div>
-                <div class="">
-                    <div>
+        <section class="d-flex flex-column justify-content-between m-3 gap-3">
+            <div class="bgc-primary p-3 px-4 rounded">
+                <h2 class="fcc-primary text-start m-1 mx-2">Saldo</h2>
+                <div class="display-4 fw-bold fcc-primary text-start w-ch-10 mx-4">R$ 640,00</div>
+                <div class="fcc-secondary text-start mx-4">
+                    <div class="fw-bold">
                         Estado: <span>Positivo</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Ultima receita: <span>10/10/2025</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Ultima despesa: <span>09/09/2025</span>
                     </div>
                 </div>
             </div>
-            <div class="">
-                <h2 class="">Meta</h2>
-                <div class="">R$ 1500,00</div>
-                <div class="">
-                    <div>
+            <div class="bgc-primary p-3 px-4 rounded">
+                <h2 class="fcc-primary text-start m-1 mx-2">Meta</h2>
+                <div class="display-4 fw-bold fcc-primary text-start w-ch-10 mx-4">R$ 1500,00</div>
+                <div class="fcc-secondary text-start mx-4">
+                    <div class="fw-bold">
                         Estado: <span>Em progresso</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Diferença: <span>R$ 860,00</span>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Ultima despesa: <span>09/09/2025</span>
                     </div>
                 </div>
@@ -60,21 +63,25 @@
         </section>
 
         <!-- Sessão: Navegação e Relatório -->
-        <section class="">
+        <section class="w-50 d-flex flex-column justify-content-between m-3 gap-3">
             <!-- Navegação -->
-            <div class="">
-                <a href="#new-transaction" class="" data-bs-toggle="modal" data-bs-target="#modalTransaction">
-                    <i class=""> </i> Transação
+            <div class="bgc-primary p-3 rounded d-flex flex-wrap justify-content-around">
+                <a href="#new-transaction" class="d-flex flex-column fcc-primary fs-4 mx-2" data-bs-toggle="modal"
+                    data-bs-target="#modalTransaction">
+                    <i class="bi bi-cash fs-1"></i> Transação
                 </a>
 
-                <a href="/src/pages/goals" class=""><i class=""></i> Meta</a>
-                <a href="/src/pages/history" class=""><i class=""></i> Histórico</a>
-                <a href="/src/pages/reports" class=""><i class=""></i> Relatórios</a>
+                <a href="/pages/goals" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-cash-stack fs-1"></i> Meta</a>
+                <a href="/pages/history" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-clock fs-1"></i> Histórico</a>
+                <a href="/pages/reports" class="d-flex flex-column fcc-primary fs-4 mx-2"><i
+                        class="bi bi-bar-chart fs-1"></i> Relatórios</a>
             </div>
 
             <!-- Relatório -->
-            <div class="">
-                <canvas id="transactionPieChart" width="300" height="300"></canvas>
+            <div class="bgc-primary p-3 rounded">
+                <canvas id="transactionPieChart" width="300" height=300"></canvas>
             </div>
         </section>
     </main>
@@ -83,10 +90,18 @@
     <!-- Rodapé -->
     <custom-footer></custom-footer>
     <!-- Fim de rodapé -->
-
+     
     <!--MODAL NOVA TRANSAÇÃO-->
     <custom-modal-transaction></custom-modal-transaction>
     <!--FIM MODAL NOVA TRANSAÇÃO-->
+
+    <script src="/js/Components.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module">
+         import { generateTransactionPieChart } from "/js/ChartGenerators.js";
+
+         generateTransactionPieChart("transactionPieChart", 70, 30);
+    </script>
 </body>
 
 </html>
