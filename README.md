@@ -1,115 +1,97 @@
 # Controle de Gastos Pessoais
 
+
 ---
+
+## Descrição
+Aplicação para controle financeiro pessoal: cadastro de usuários, registro de receitas e despesas, categorização, metas e dashboard com filtros e gráficos.
 
 ## Funcionalidades principais
 - Cadastro e gerenciamento de usuários
 - Registro de despesas e receitas
 - Categorização das transações
 - Definição e acompanhamento de metas financeiras
-- Dashboard com gráficos interativos
+- Dashboard com gráficos interativos (Chart.js)
 - Filtros por período, categoria e valor
-- Interface web responsiva
 
 ## Tecnologias
-- Backend: Python, FastAPI, SQLModel, SQLite
-- Frontend: HTML, CSS, JavaScript, Bootstrap, Chart.js
-- Ferramentas: Git, GitHub, VS Code, Draw.io, ChatGPT
+- Backend: Python 3.10, Django Rest Framework, SQLite
+- Frontend: HTML, JavaScript, TailwindCSS, Chart.js, DaisyUI, Vue.js
+- Dev / CI: Git, GitHub, VS Code, (possível GitHub Actions)
+- Ferramentas: Docker (opcional), pytest (testes), Live Server / python -m http-server
 
 ## Estrutura do repositório
 ```
 controle-gastos/
-├── backend/                 # API e modelos (requirements.txt)
-├── frontend/                # HTML, CSS, JS, vendor (Bootstrap, etc.)
+├── backend/                 # API, modelos e dependências (requirements.txt)
+├── frontend/               
 │   ├── index.html
 │   └── pages/
-├── CHANGELOG.md             # histórico de mudanças (criado)
-├── SECURITY.md              # política de segurança (criada)
-├── LICENSE.md               # licença e políticas de uso (criado)
+├── CHANGELOG.md
+├── SECURITY.md
+├── LICENSE.md
 └── README.md
 ```
 
-## Como baixar e rodar (rápido)
-1. Clone:
+## Configuração rápida (Windows / PowerShell)
+Local do projeto (exemplo): C:\Users\seu-usuario\Desktop\controle-gastos
+
+1. Clonar:
 ```powershell
-git clone https://github.com/seu-usuario/controle-gastos.git
-cd "C:\Users\usuario\Desktop\controle-gastos"
+git clone https://github.com/anthony-gg1/controle-gastos
+cd "C:\Users\seu-usuario\Desktop\controle-gastos"
 ```
 
-2. Backend:
+2. Backend (ambiente virtual):
 ```powershell
 cd backend
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+# definir variáveis de ambiente se necessário (ex: DATABASE_URL, SECRET_KEY)
 uvicorn app.main:app --reload
+# acessar API em http://127.0.0.1:8000
 ```
 
 3. Frontend (modo simples):
-- Abrir `frontend/index.html` no navegador ou servir em localhost:
 ```powershell
 cd frontend
-python -m http.server 5500
+npm run dev
 # acessar http://localhost:5500
 ```
+Ou use a extensão Live Server do VS Code para desenvolvimento local.
 
-Observação: ajuste paths de acordo com sua estrutura local.
-
-## Segurança (SECURITY.md)
-Criamos uma política de segurança para receber relatórios de vulnerabilidades. Envie reportes privados para:
-- email: emailinstitucional20@gmail.com
-
-No reporte inclua: resumo, impacto, passos para reproduzir, versão/commit, evidências e contato. Veja o arquivo SECURITY.md na raiz para detalhes sobre escopo, prazos e opções de comunicação cifrada (PGP).
-
-## CHANGELOG
-Mantenha um arquivo `CHANGELOG.md` na raiz para registrar releases e mudanças importantes. Sugestão inicial:
-```md
-## [Unreleased]
-
-### Added
-- Inicialização do changelog.
-
-## [0.1.0] - YYYY-MM-DD
-### Added
-- Versão inicial do projeto.
-```
-
-Crie o arquivo na raiz e versionamento com git:
+4. Testes (se existirem)
 ```powershell
-New-Item -Path .\CHANGELOG.md -ItemType File
-git add CHANGELOG.md
-git commit -m "docs: add CHANGELOG.md"
-git push
+cd backend
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements-dev.txt   # se existir
+pytest
 ```
 
-## Versionamento
+## Variáveis de ambiente recomendadas
+- DATABASE_URL (ex: sqlite:///./data.db)
+- SECRET_KEY
+- DEBUG (true/false)
 
-Este projeto segue o padrão [SemVer](https://semver.org/lang/pt-BR/), que utiliza o formato `MAJOR.MINOR.PATCH`:
+Coloque variáveis em um arquivo `.env` e carregue com python-dotenv ou configure no ambiente.
 
-- **MAJOR**: mudanças incompatíveis com versões anteriores
-- **MINOR**: novas funcionalidades compatíveis
-- **PATCH**: correções de bugs e melhorias internas
+## Segurança
+Para reportar vulnerabilidades, consulte SECURITY.md e envie para:
+- email: emailinstitucional20@gmail.com  
+Inclua resumo, impacto, passos para reproduzir, versão/commit e evidências.
 
-Versão atual: `0.1.0` — desenvolvimento inicial.
+## CHANGELOG & Versionamento
+Siga SemVer (MAJOR.MINOR.PATCH). Atualize CHANGELOG.md para cada release.
 
-Consulte o [`CHANGELOG.md`](./CHANGELOG.md) para acompanhar as mudanças por versão.
-
-## Licença
-
-Este projeto está licenciado sob os termos da [Licença MIT](./LICENSE.md).
-
-Você pode usar, copiar, modificar e distribuir este software livremente, inclusive para fins comerciais, desde que mantenha os créditos aos autores originais e aceite os termos descritos.
-
-> O software é fornecido "como está", sem garantias de qualquer tipo. Os autores não se responsabilizam por danos ou prejuízos decorrentes do uso.
-
-
-## Boas práticas de contribuição
-- Atualize CHANGELOG.md para cada release
-- Use issues para discutir grandes mudanças
+## Contribuição
+- Abra issues para bugs ou propostas
+- Faça branches por feature/bugfix e envie pull requests
+- Atualize CHANGELOG.md e a documentação quando necessário
 
 ## Contato e suporte
-- Reportes de bugs / dúvidas: abra uma issue no GitHub
-- Vulnerabilidades: emailinstitucional20@gmail.com (veja SECURITY.md)
+- Reportes de bugs / dúvidas: abrir uma issue no repositório GitHub
+- Vulnerabilidades: emailinstitucional20@gmail.com
 
 ## Integrantes do Projeto
 1. Anthony Guilherme Vieira Moraes  
