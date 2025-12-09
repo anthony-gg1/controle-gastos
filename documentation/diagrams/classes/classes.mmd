@@ -6,20 +6,24 @@ config:
 classDiagram
     class Transaction {
         + id
-        + type
+        + user
         + value
+        + type
         + date
-        + category
         + description
+        + category
     }
     class User {
-        + name
+        + id
+        + fullname
+        + password
         + email
-        + phone
         + cpf
+        + tel
     }
     class Goal {
         + id
+        + user
         + title
         + value
         + description
