@@ -1,7 +1,7 @@
-from rest_framework import serializers
+from rest_framework.viewsets import ModelViewSet
 from .models import Transaction
+from .serializers import TransactionSerializer
 
-class TransactionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Transaction
-        fields = '__all__' 
+class TransactionViewSet(ModelViewSet):
+    queryset = Transaction.objects.all()
+    serializer_class = TransactionSerializer
