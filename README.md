@@ -1,6 +1,5 @@
 # Controle de Gastos Pessoais
 
-
 ---
 
 ## Descrição
@@ -17,64 +16,55 @@ Aplicação para controle financeiro pessoal: cadastro de usuários, registro de
 ## Tecnologias
 - Backend: Python 3.10, Django Rest Framework, SQLite
 - Frontend: HTML, JavaScript, TailwindCSS, Chart.js, DaisyUI, Vue.js
-- Dev / CI: Git, GitHub, VS Code, (possível GitHub Actions)
-- Ferramentas: Docker (opcional), pytest (testes), Live Server / python -m http-server
+- Dev / CI: Git, GitHub, Docker, GitHub Actions
 
 ## Estrutura do repositório
 ```
-controle-gastos/
-├── backend/                 # API, modelos e dependências (requirements.txt)
-├── frontend/               
-│   ├── index.html
-│   └── pages/
+CONTROLE-GASTOS
+├── .github
+│   ├── ISSUE_TEMPLATE
+│   ├── dependabot.yml
+│   └── pull_request_template.md
+│
+├── backend
+│   ├── core
+│   │   ├── core
+│   │   ├── goal
+│   │   ├── transaction
+│   │   └── user
+│   ├── manage.py
+│   └── requirements.txt
+│
+├── database
+│   └── schemas.sql
+│
+├── documentation
+│   ├── diagrams
+│   │   ├── activity
+│   │   ├── classes
+│   │   ├── db
+│   │   └── use-cases
+│   ├── docs
+│   └── slides
+│
+├── frontend
+│   ├── css
+│   ├── imgs
+│   ├── js
+│   ├── pages
+│   ├── vendor
+│   └── index.html
+│
+├── .gitattributes
+├── .gitignore
 ├── CHANGELOG.md
-├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE.md
-└── README.md
+├── README.md
+└── SECURITY.md
+
 ```
-
-## Configuração rápida (Windows / PowerShell)
-Local do projeto (exemplo): C:\Users\seu-usuario\Desktop\controle-gastos
-
-1. Clonar:
-```powershell
-git clone https://github.com/anthony-gg1/controle-gastos
-cd "C:\Users\seu-usuario\Desktop\controle-gastos"
-```
-
-2. Backend (ambiente virtual):
-```powershell
-cd backend
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-# definir variáveis de ambiente se necessário (ex: DATABASE_URL, SECRET_KEY)
-uvicorn app.main:app --reload
-# acessar API em http://127.0.0.1:8000
-```
-
-3. Frontend (modo simples):
-```powershell
-cd frontend
-npm run dev
-# acessar http://localhost:5500
-```
-Ou use a extensão Live Server do VS Code para desenvolvimento local.
-
-4. Testes (se existirem)
-```powershell
-cd backend
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements-dev.txt   # se existir
-pytest
-```
-
-## Variáveis de ambiente recomendadas
-- DATABASE_URL (ex: sqlite:///./data.db)
-- SECRET_KEY
-- DEBUG (true/false)
-
-Coloque variáveis em um arquivo `.env` e carregue com python-dotenv ou configure no ambiente.
 
 ## Segurança
 Para reportar vulnerabilidades, consulte SECURITY.md e envie para:
